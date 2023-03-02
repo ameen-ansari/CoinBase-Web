@@ -1,0 +1,72 @@
+.parent {
+  background-color: #151515;
+  display: flex;
+  padding: 2rem;
+  gap: 3rem;
+  position: relative;
+}
+
+.parent > div > p {
+  color: #a2a2a2;
+}
+.parent > div > p:nth-child(1) {
+    color: white;
+    margin-bottom: 1rem;
+}
+.parent > div > div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+
+.parent > div:nth-child(1) > img {
+  width: 50%;
+}
+.parent > div:nth-child(1) {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.parent > div:nth-child(2) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.parent > div:nth-child(3) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.parent > div:nth-child(4) {
+    flex: 2;
+    display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex;
+}
+
+.parent > div:nth-child(4) > div  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.parent > div:nth-child(4) > div > div {
+  width: 4rem;
+  height: 4rem;
+  background-color: #a2a2a2;
+}
+
+.copyR {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 2rem;
+    color: #989898;
+}

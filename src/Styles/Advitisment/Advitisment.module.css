@@ -1,0 +1,146 @@
+.parent {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.parent > div:nth-child(1) > img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.parent > div:nth-child(1) > img {
+  width: 16%;
+  margin: auto;
+}
+.parent > div:nth-child(1) > p {
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.parent > div:nth-child(2) > p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.parent > div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* NextSec */
+
+.parent2 {
+  width: 100%;
+  background-image: url("../../Images/Advitisment/Rectangle 3.png");
+  background-repeat: no-repeat;
+  z-index: 9;
+  margin-top: 2rem;
+}
+
+.parent2 > img {
+  position: relative !important ;
+  bottom: 2rem;
+  z-index: 9;
+}
+.parent2 > div {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+.parent2 > div > img {
+  margin-top: 5rem;
+  width: 25%;
+}
+
+/* New section */
+
+.parent4 {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1rem;
+}
+
+.parent4 > div:nth-child(1) > img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.parent4 > div:nth-child(1) > img {
+  width: 16%;
+  margin: auto;
+}
+.parent4 > div:nth-child(1) > p {
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 35px;
+}
+
+.parent4 > div:nth-child(2) > p {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0px;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+.parent4 > div:nth-child(3) {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.parent4 input {
+  border: 2px solid grey;
+  padding: 0.7rem 1rem;
+  width: 30%;
+  text-align: left;
+  border-radius: 100px;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0px;
+}
+
+.parent4 button {
+  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
