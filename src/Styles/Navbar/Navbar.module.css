@@ -121,20 +121,29 @@
 }
 
 @media (max-width: 500px) {
-  .NavbarP * {
+  .NavbarP {
     display: none;
   }
-  .NavbarP button {
-    display: none;
+
+  .resNP {
+    position: fixed;
+    width: 100%;
   }
-  .NavbarP > div:nth-child(1) {
-    /* border: 2px solid black; */
-    display: block !important;
+  .resN {
+    display: flex;
+    padding: 1.5rem 2rem;
   }
-  .NavbarP > div:nth-child(1) > img {
-    display: block !important;
+
+  .resN > div {
+    display: flex;
+    flex: 1;
   }
-  .brg {
-    display: block;
+
+  .resN > div:nth-child(2) {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .resN > div:nth-child(2) > img {
+    transform: scale(1.2);
   }
 }
