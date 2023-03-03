@@ -5,7 +5,7 @@ import RatesTypeS from "./Components/RatesTypeS/RatesTypeS";
 import Card from "./Components/Blogs/CardType";
 import BlogS from "./Components/Blogs/Blogs";
 import Advitisment from "./Components/Advitisment/Advitisment";
-// import Footer from "./Components/Footer/Footer";
+import Footer from "./Components/Footer/Footer";
 // import DropD from './Components/DropDown/DropDown'
 
 function App() {
@@ -17,10 +17,9 @@ function App() {
       <Card />
       <BlogS />
       <Advitisment />
-      {/* <Footer /> */}
+      <Footer />
 
       {/* <DropD /> */}
-
     </div>
   );
 }

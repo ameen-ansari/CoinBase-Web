@@ -22,6 +22,7 @@ function Footer() {
           <img src={ins} alt="" />
         </div>
       </div>
+
       <div>
         <p>CoinBase Links</p>
         <p>Home</p>
@@ -48,7 +49,25 @@ function Footer() {
           <div></div>
         </div>
       </div>
-      <p className={style.copyR}>© 2019  Designed by Cr8tiv_yemmy</p>
+
+      <p className={style.copyR}>© 2019 Designed by Cr8tiv_yemmy</p>
+      <div className={style.FooterDivs}>
+        <div>
+          <p>CoinBase Links</p>
+          <p>Home</p>
+          <p>About Us</p>
+          <p>Blog</p>
+          <p>Sell</p>
+          <p>Contact Us</p>
+        </div>
+        <div>
+          <p>Contact Us</p>
+          <p>+923091755617</p>
+          <p>ameen55668@gmail.com</p>
+          <p>Address goes here</p>
+          <p>Download Our App</p>
+        </div>
+      </div>
     </div>
   );
 }

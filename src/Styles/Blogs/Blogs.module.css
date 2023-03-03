@@ -28,7 +28,7 @@
 }
 
 .div1 > img {
-  width: 3%;
+  width: 4%;
 }
 
 .parent > div:nth-child(1) > p:nth-child(2) {
@@ -38,7 +38,8 @@
   line-height: 40px;
   letter-spacing: 0px;
   text-align: center;
-  margin: 1rem 0px;
+  margin: 1rem auto;
+  width: 90%;
 }
 
 .cardsP {
@@ -130,6 +131,8 @@
     margin: auto;
     width: 98%;
   }
+  
+  
 }
 
 @media (max-width:450px) {
@@ -143,6 +146,11 @@
     margin: auto;
     width: 98%;
     padding: 1rem;
+  }
+  .div1 > img {
+    width: 8%;
+    position: relative;
+    bottom: 0.5rem;
   }
 }
 
@@ -230,10 +238,10 @@
     padding: 10rem 1rem;
   }
   .clientSecPChild > div:nth-child(1) > p:nth-child(3) {
-    width: 80%;
+    width: 90%;
   }
   .clientSecPChild > div:nth-child(1) > p:nth-child(1) {
-    width: 60%;
+    width: 90%;
   }
   .clientSecPChild > div:nth-child(1) > img:nth-child(2) {
     width: 10%;

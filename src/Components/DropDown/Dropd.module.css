@@ -11,6 +11,7 @@
   z-index: 1000045;
   color: black;
   display: none;
+  /* margin-left:100% !important; */
 }
 
 .dropdownC {
@@ -46,6 +47,8 @@
   .dropdown {
     display: block;
     padding-right: 0rem;
+    /* margin-left:80% !important; */
+    margin-left: 35%;
   }
 }
 @media (max-width: 650px) {
