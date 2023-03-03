@@ -127,6 +127,8 @@
 
   .resNP {
     position: fixed;
+    z-index: 12;
+    background-color: #fff;
     width: 100%;
   }
   .resN {

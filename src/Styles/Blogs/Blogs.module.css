@@ -46,7 +46,6 @@
   margin: 3rem 0px;
   padding: 2rem 3rem;
 }
-
 .cardsP > div {
   border: 2px solid #888888;
   display: flex;
@@ -121,6 +120,30 @@
   background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width:650px) {
+  .cardsP {
+    flex-direction: column;
+  }
+  .cardsP > div{
+    margin: auto;
+    width: 98%;
+  }
+}
+
+@media (max-width:450px) {
+  
+  .cardsP > div{
+    margin: auto;
+    width: 98%;
+    padding: 1rem;
+  }
+  .cardsP > div:nth-child(2){
+    margin: auto;
+    width: 98%;
+    padding: 1rem;
+  }
 }
 
 /* NEXTS */
@@ -200,4 +223,19 @@
 .clientSecPChild > div:nth-child(2) > img {
   width: 70%;
   margin: auto;
+}
+
+@media (max-width: 650px) {
+  .clientSecP {
+    padding: 10rem 1rem;
+  }
+  .clientSecPChild > div:nth-child(1) > p:nth-child(3) {
+    width: 80%;
+  }
+  .clientSecPChild > div:nth-child(1) > p:nth-child(1) {
+    width: 60%;
+  }
+  .clientSecPChild > div:nth-child(1) > img:nth-child(2) {
+    width: 10%;
+  }
 }
