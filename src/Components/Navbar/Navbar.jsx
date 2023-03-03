@@ -3,6 +3,8 @@ import indicator from "../../Images/Navbar/Indicator.png";
 import dropD from "../../Images/Navbar/Dropdown Button.png";
 import style from "../../Styles/Navbar/Navbar.module.css";
 import Button1 from "../Buttons/Button1";
+import style1 from "../DropDown/Dropd.module.css";
+import brg from '../../Images/Navbar/Group.png'
 // import DropDown from "../DropDown/DropDown";
 
 function Navbar() {
@@ -20,6 +22,20 @@ function Navbar() {
         <p>About Us</p>
         <p>Blogs</p>
         <p className="my-50">Contact Us</p>
+        <p className={style1.dropdown}>
+          <p>Dropdown</p>
+          <ul className={`${style1.dropdownC}`}>
+            <li>
+              <p>Option 0110</p>
+            </li>
+            <li>
+              <p>Option 0110</p>
+            </li>
+            <li>
+              <p>Option 0110</p>
+            </li>
+          </ul>
+        </p>
       </div>
       <div>
         <div>
@@ -32,6 +48,7 @@ function Navbar() {
           bgColor=" linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)"
         />
       </div>
+      <img className={style.brg} src={brg} alt="" />
     </div>
   );
 }

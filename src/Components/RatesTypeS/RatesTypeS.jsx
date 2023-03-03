@@ -7,6 +7,10 @@ import Button1 from "../Buttons/Button1";
 import botomH from "../../Images/RatesTypeS/Ñëîé 1 1 (1).png";
 import indicator from "../../Images/Navbar/Indicator.png";
 import wel from "../../Images/RatesTypeS/xy.png";
+import arrow from "../../Images/RatesTypeS/Transfer.png";
+import darrow from "../../Images/RatesTypeS/Double transfer.png";
+import eth from "../../Images/RatesTypeS/Eth.png";
+import bb from "../../Images/RatesTypeS/bank-building.png";
 
 function RatesTypeS() {
   return (
@@ -33,57 +37,83 @@ function RatesTypeS() {
           <div className={style.cardBodyP}>
             <div className={style.cardBody}>
               <div>
-                <div>
-                  <img src={btc} alt="bitcoin" />
-                  <p>BTC</p>
-                  <p>We Buy @ ₦350/$</p>
+                <div className={style.littelCard}>
+                  <div>
+                    <div>
+                      <img src={btc} alt="bitcoin" />
+                      <p>BTC</p>
+                    </div>
+                    <div>
+                      <p>We Buy @ ₦350/$</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <img src={btc} alt="bitcoin" />
+                      <p>Bitcoin</p>
+                    </div>
+                    <p>NGN</p>
+                  </div>
+                  <div>
+                    <div>
+                      <p>
+                        BitCoin BTC
+                        <img src={arrow} alt="bitcoin" />
+                      </p>
+                    </div>
+                    <p>Bank transfer NGN</p>
+                  </div>
                 </div>
                 <div>
-                  <img src={btc} alt="bitcoin" />
-                  <p>BTC</p>
-                  <p>We Buy @ ₦350/$</p>
+                  <div>
+                    {/* <p>We Buy @ ₦350/$</p> */}
+                  </div>
+                  <div>
+                    {/* <p>#3452030300303.24/$</p> */}
+                  </div>
+                  <div></div>
+                </div>
+              </div>
+            </div>
+            <div className={style.cardBody}>
+              <div>
+                <div className={style.littelCard}>
+                  <div>
+                    <div>
+                      <img src={eth} alt="bitcoin" />
+                      <p>ETH</p>
+                    </div>
+                    <div>
+                      <p>We Buy @ ₦350/$</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+                      <img src={bb} alt="bitcoin" />
+                      <p>Bank Transfer</p>
+                    </div>
+                    <p>399.98 BTC</p>
+                  </div>
+                  <div>
+                    <div>
+                      <p>
+                      1.16 BTC
+                        <img src={darrow} alt="bitcoin" />
+                      </p>
+                    </div>
+                    <p>696152299929.23 NGN</p>
+                    {/* <p></p> */}
+                  </div>
                 </div>
                 <div>
-                  <img src={btc} alt="bitcoin" />
-                  <p>BTC</p>
-                  <p>We Buy @ ₦350/$</p>
+                  <div>
+                    {/* <p>We Buy @ ₦350/$</p> */}
+                  </div>
+                  <div>
+                  </div>
+                  <div></div>
                 </div>
               </div>
-              <h1>Work Later</h1>
-              {/* <div>
-              <div>
-                <img src={btc} alt="bitcoin" />
-                <p>BTC</p>
-                <p>We Buy @ ₦350/$</p>
-              </div>
-              <div>
-                <img src={btc} alt="bitcoin" />
-                <p>BTC</p>
-                <p>We Buy @ ₦350/$</p>
-              </div>
-              <div>
-                <img src={btc} alt="bitcoin" />
-                <p>BTC</p>
-                <p>We Buy @ ₦350/$</p>
-              </div>
-            </div> */}
-              {/* <div>
-              <div>
-                <img src={btc} alt="bitcoin" />
-                <p>BTC</p>
-                <p>We Buy @ ₦350/$</p>
-              </div>
-              <div>
-                <img src={btc} alt="bitcoin" />
-                <p>BTC</p>
-                <p>We Buy @ ₦350/$</p>
-              </div>
-              <div>
-                <img src={btc} alt="bitcoin" />
-                <p>BTC</p>
-                <p>We Buy @ ₦350/$</p>
-              </div>
-            </div> */}
             </div>
           </div>
         </div>

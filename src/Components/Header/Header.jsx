@@ -5,7 +5,6 @@ import pathTYpe from "../../Images/Header/Path 4.png";
 import Button1 from "../Buttons/Button1";
 import botomH from "../../Images/Header/Layer 2.png";
 import indicator from "../../Images/Navbar/Indicator.png";
-import wel from '../../Images/Header/welcom.png'
 
 function Header() {
   return (
@@ -21,7 +20,9 @@ function Header() {
               CoinBase is a platform for trading your bitcoin and giftcard at
               the best rate, why not give us a trial.
             </p>
-            <Button1 value="GET STARTED" color="#FD749B" bgColor="white" />
+            <div>
+              <p>GET STARTED</p>
+            </div>
           </div>
           <div>
             <img src={img} alt="" />
@@ -37,7 +38,7 @@ function Header() {
         </div>
         <div>
           <div>
-            <img src={wel} alt="" />
+            <p className={style.wel}>Welcome to Coinbase</p>
             <img src={indicator} alt="" />
           </div>
           <p>

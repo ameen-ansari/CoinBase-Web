@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-top: 10rem;
 }
@@ -12,6 +13,8 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  padding-bottom: 5rem;
+  position: relative;
 }
 .parent > div:nth-child(1) {
   gap: 1rem;
@@ -54,16 +57,49 @@
   line-height: 54px;
   letter-spacing: 0px;
 }
+.parent > div:nth-child(1) > div  {
+
+  background-color: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 145px;
+  padding: 1rem 0rem !important;
+  border-radius: 100px;
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+.parent > div:nth-child(1) > div >p  {
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  margin: auto;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  font-family: 'Poppins';
+
+}
+
+.wel {
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%) !important;
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  /* margin: auto; */
+  font-size: 24px ;
+  font-weight: 600 ;
+  font-family: 'Poppins';
+}
 .parent > div:nth-child(1) > p:nth-child(2) {
   font-family: "Open San";
   font-size: 17px;
   line-height: 27px;
 }
-
-.Allparent > div:nth-child(2) img {
-  position: relative;
-  top: 2rem;
-}
+ .Allparent > div:nth-child(2) img {
+  position: absolute;
+  bottom: -2rem;
+  left: 0%;
+  
+} 
 
 /* Next Section */
 .headerBottomSideP {
@@ -105,7 +141,6 @@
   text-align: left;
   padding-right: 2rem;
 }
-
 
 .headerBottomSideP > div:nth-child(2) > button {
   width: 30%;

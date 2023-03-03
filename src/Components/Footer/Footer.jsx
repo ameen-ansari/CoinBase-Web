@@ -32,7 +32,7 @@ function Footer() {
       </div>
       <div>
         <p>Contact Us</p>
-        <p>+923154316991</p>
+        <p>+923091755617</p>
         <p>ameen55668@gmail.com</p>
         <p>Address goes here</p>
         <p>Download Our App</p>

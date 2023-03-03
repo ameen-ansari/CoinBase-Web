@@ -56,6 +56,27 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+}
+.cardBody > div:nth-child(1) > div:nth-child(1) {
+  padding: 0px 0px !important;
+}
+.cardBody > div:nth-child(1) {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 400;
+}
+.cardBody > div:nth-child(1) > div:nth-child(2) > div {
+  text-align: center;
 }
 
 .parent img:nth-child(3) {
@@ -63,6 +84,36 @@
   top: 2rem;
 }
 
+.littelCard div:nth-child(2) {
+  display: flex;
+  justify-content: space-evenly;
+}
+.littelCard div > div {
+  flex: 0.7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+.littelCard > div:nth-child(3) > div {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.littelCard > div:nth-child(3) > p {
+  flex: 4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cardBody > div:nth-child(1) > div:nth-child(2){
+  display: none;
+}
 /* NextS*/
 
 .headerBottomSideP {
@@ -112,7 +163,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin:0rem 0rem 0rem 3rem;
+  margin: 0rem 0rem 0rem 3rem;
 }
 
 .headerBottomSideP > div:nth-child(2) > * {

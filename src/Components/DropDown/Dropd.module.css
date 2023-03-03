@@ -1,0 +1,56 @@
+.dropdown {
+  width: 198px;
+  position: relative;
+  top: 0%;
+  left: 0%;
+  /* position: relative; */
+  /* top: 12rem; */
+  font-family: "Poppin";
+  font-weight: 600;
+  font-size: 19px;
+  z-index: 1000045;
+  color: black;
+  display: none;
+}
+
+.dropdownC {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  left: 0%;
+  min-width: 160px;
+  z-index: 1000027;
+}
+
+.dropdown:hover .dropdownC {
+  display: block;
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0.5rem 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 950px) {
+  .dropdown {
+    display: block;
+    padding-right: 3rem;
+  }
+}
+@media (max-width: 870px) {
+  .dropdown {
+    display: block;
+    padding-right: 0rem;
+  }
+}
+@media (max-width: 650px) {
+  .dropdown {
+    display: block;
+    padding-left: 5rem;
+  }
+}
