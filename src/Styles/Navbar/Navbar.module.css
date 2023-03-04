@@ -130,6 +130,7 @@
   color: white;
   transition: 1.5s;
   /* position: relative; */
+  display: none;
 }
 
 .offcanvas  > div{
@@ -152,4 +153,10 @@
    position: absolute;
    top: 1rem;
    right: 1rem;
+}
+
+@media (max-width:500px){
+  .offcanvas {
+    display: flex !important;
+  }
 }
