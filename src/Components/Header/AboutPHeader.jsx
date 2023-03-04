@@ -16,8 +16,7 @@ function AboutPHeader() {
           <div>
             <p>HOME/About Us</p>
             <p>
-              We provide easy solution to exchange your
-              <span>Bitcoin/ GiftCard for money</span>
+              <span>Great service, Professional support</span>
             </p>
             <p>
               CoinBase is a platform for trading your bitcoin and giftcard at

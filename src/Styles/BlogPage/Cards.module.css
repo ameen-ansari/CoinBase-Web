@@ -1,0 +1,79 @@
+.P1 {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 2rem 0px;
+}
+
+.card {
+  width: 70%;
+  margin: auto;
+  border-radius: 12px;
+  margin: 2rem auto;
+  /* border: 2px solid black; */
+}
+
+.card > img {
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  border: 2px solid white;
+}
+.card > div > p:nth-child(1) {
+  background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 25px;
+  font-family: "Poppins";
+  text-align: center;
+  /* width: 60%; */
+  margin: auto;
+}
+.card > div {
+  padding: 2rem 1rem;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  border: 2px solid gray;
+  border-top: 0;
+  border-radius: 12px;
+  border-top-right-radius: 0%;
+  border-top-left-radius: 0%;
+}
+.card > div > p:nth-child(2) {
+  font-family: "Poppins";
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.card > div > p:nth-child(3) {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  .card > div > p:nth-child(3) {
+    width: 95%;
+  }
+  .card {
+    width: 95%;
+  }
+}
+
+.card button {
+  width: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
