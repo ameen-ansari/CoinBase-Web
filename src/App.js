@@ -1,16 +1,16 @@
 import "./App.css";
-import BlogContent from "./Pages/BlogContent";
-// import LandingPage from "./Pages/LandingPage";
+// import BlogContent from "./Pages/BlogContent";
+import LandingPage from "./Pages/LandingPage";
 // import AboutPage from "./Pages/AboutPage";
 // import BlogPage from "./Pages/BlogPage";
 
 function App() {
   return (
     <div>
-      {/* <LandingPage /> */}
+      <LandingPage />
       {/* <AboutPage /> */}
       {/* <BlogPage /> */}
-      <BlogContent />
+      {/* <BlogContent /> */}
     </div>
   );
 }

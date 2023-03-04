@@ -1,10 +1,9 @@
-import React from "react";
-import style from "../../Styles/Blogs/Blogs.module.css";
-import ind from "../../Images/Navbar/Indicator.png";
-import Button from "../Buttons/Button1";
-import img from "../../Images/Blogs/Path 4.2.png";
-import HC from "../../Images/Blogs/Happy Customers.png";
-import nimg from "../../Images/RatesTypeS/Path 4 (1).png";
+import style from "../../../Styles/Blogs/Blogs.module.css";
+import ind from "../../../Images/Navbar/Indicator.png";
+import Button from "../../Buttons/Button1";
+import img from "../../../Images/Blogs/Path 4.2.png";
+import HC from "../../../Images/Blogs/Happy Customers.png";
+import nimg from "../../../Images/RatesTypeS/Path 4 (1).png";
 
 function Blogs() {
   return (

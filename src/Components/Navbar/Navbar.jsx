@@ -19,12 +19,10 @@ function Navbar() {
             <p>Home</p>
             <img src={indicator} alt="" />
           </div>
-          {/* <DropDown /> */}
           <p>About Us</p>
           <p>Blogs</p>
-          <p className="my-50">Contact Us</p>
           <p className={`${style1.dropdown} ${style.dropdown}`}>
-            <p>Dropdown</p>
+            <p>More</p>
             <ul className={`${style1.dropdownC}`}>
               <li>
                 <p>Option 0110</p>
@@ -40,8 +38,10 @@ function Navbar() {
         </div>
         <div>
           <div>
-            <p>Sell Bitcoin/ Giftcard</p>
-            <img src={dropD} alt="" />
+            <p>
+              Sell Bitcoin/ Giftcard
+            </p>
+              <img src={dropD} alt="" />
           </div>
           <Button1
             value="LOGIN"
