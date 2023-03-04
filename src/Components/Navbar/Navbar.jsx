@@ -1,13 +1,41 @@
-import logo from "../../Images/Navbar/Logo.png";
-import indicator from "../../Images/Navbar/Indicator.png";
-// import dropD from "../../Images/Navbar/Dropdown Button.png";
+import logo from "../../Images/Navbar/Logo.svg";
+// import indicator from "../../Images/Navbar/Indicator.png";
 import style from "../../Styles/Navbar/Navbar.module.css";
 import Button1 from "../Buttons/Button1";
 import style1 from "../DropDown/Dropd.module.css";
-import brg from "../../Images/Navbar/Group.png";
-// import DropDown from "../DropDown/DropDown";
+import brg from "../../Images/Navbar/Group.svg";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+  const navigate = useNavigate();
+  let pushSlash = () => {
+    navigate("/");
+    let offC = document.getElementById("offC");
+    offC.style.bottom = "100%";
+    offC.style.transition = "1s";
+  };
+  let pushAbout = () => {
+    navigate("/about");
+    let offC = document.getElementById("offC");
+    offC.style.bottom = "100%";
+    offC.style.transition = "1s";
+  };
+  let pushBlogs = () => {
+    navigate("/blogs");
+    let offC = document.getElementById("offC");
+    offC.style.bottom = "100%";
+    offC.style.transition = "1s";
+  };
+  let showOffC = () => {
+    let offC = document.getElementById("offC");
+    offC.style.bottom = "0%";
+    offC.style.transition = "1s";
+  };
+  let removeOffC = () => {
+    let offC = document.getElementById("offC");
+    offC.style.bottom = "100%";
+    offC.style.transition = "1s";
+  };
   return (
     <>
       <div className={style.NavbarP}>
@@ -16,22 +44,22 @@ function Navbar() {
         </div>
         <div>
           <div className={style.home}>
-            <p>Home</p>
-            <img src={indicator} alt="" />
+            <p onClick={pushSlash}>Home</p>
+            {/* <img src={indicator} alt="" /> */}
           </div>
-          <p>About Us</p>
-          <p>Blogs</p>
+          <p onClick={pushAbout}>About Us</p>
+          <p onClick={pushBlogs}>Blogs</p>
           <p className={`${style1.dropdown} ${style.dropdown}`}>
             <p>More</p>
             <ul className={`${style1.dropdownC}`}>
               <li>
-                <p>Option 0110</p>
+                <p onClick={pushSlash}>Home</p>
               </li>
               <li>
-                <p>Option 0110</p>
+                <p onClick={pushAbout}>About</p>
               </li>
               <li>
-                <p>Option 0110</p>
+                <p onClick={pushBlogs}>Blogs</p>
               </li>
             </ul>
           </p>
@@ -53,8 +81,21 @@ function Navbar() {
             <img src={logo} alt="" />
           </div>
           <div>
-            <img src={brg} alt="" />
+            <img id="brg" onClick={showOffC} src={brg} alt="" />
           </div>
+        </div>
+      </div>
+      <div id="offC" className={style.offcanvas}>
+        <div>
+          <p onClick={removeOffC}>X</p>
+          <p onClick={pushSlash}>Home</p>
+          <p onClick={pushAbout}>About</p>
+          <p onClick={pushBlogs}>Blogs</p>
+          <Button1
+            value="LogIn"
+            color="white"
+            bgColor="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)"
+          />
         </div>
       </div>
     </>

@@ -6,7 +6,7 @@
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top: 7rem;
+  padding-top: 0rem;
 }
 
 .parent {
@@ -115,7 +115,7 @@
   }
 
   .Allparent {
-    padding-top: 6rem;
+    padding-top:6rem;
   }
   .parent > div:nth-child(1) {
     padding: 2rem 0px;

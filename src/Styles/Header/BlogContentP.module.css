@@ -120,7 +120,7 @@
     }
   
     .Allparent {
-      padding-top:2rem;
+      padding-top:4rem;
     }
     .parent > div:nth-child(1) {
       padding: 2rem 0px;

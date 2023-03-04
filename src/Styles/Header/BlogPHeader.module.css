@@ -1,136 +1,136 @@
-.Allparent {
-  background-image: url("../../Images/Header/Rectangle\ 284.png");
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 5rem;
-}
-
-.parent {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 5rem;
-  position: relative;
-}
-.parent > div:nth-child(1) {
-  gap: 1rem;
-}
-.parent > div {
-  flex: 1;
-  color: white;
-  padding: 4rem 2rem;
-}
-.parent > div:nth-child(1) {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: right;
-  align-items: "right";
-  text-align: left;
-}
-.parent > div span {
-  font-family: "Poppins";
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 60px;
-  letter-spacing: 0px;
-}
-
-.parent > div:nth-child(1) > * {
-  padding-left: 3rem;
-}
-
-.parent > div:nth-child(1) > p:nth-child(1) {
-  font-family: "Poppins";
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0px;
-}
-.parent > div:nth-child(1) > p:nth-child(2) {
-  font-family: "Open Sans";
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 54px;
-  letter-spacing: 0px;
-}
-
-.parent > div:nth-child(1) > p:nth-child(3) {
-  font-family: "Open San";
-  font-size: 17px;
-  line-height: 27px;
-}
-.Allparent > div:nth-child(2) img {
-  position: absolute;
-  bottom: -2rem;
-  left: 0%;
-}
-
-@media (max-width: 950px) {
-  .parent > div {
-    padding: 2rem 0px;
-  }
-  .parent > div:nth-child(2) > img {
-    width: 100%;
-  }
-
-  .parent > div:nth-child(1) > * {
-    padding-left: 2rem;
-  }
-  .parent > div:nth-child(1) > p:nth-child(2) {
-    font-size: 32px;
-    line-height: 50px;
-  }
-  .parent > div span {
-    font-size: 32px;
-    line-height: 50px;
-  }
-}
-@media (max-width: 800px) {
-  .parent > div:nth-child(1) > p:nth-child(2) {
-    font-size: 28px;
-    line-height: 45px;
-  }
-  .parent > div span {
-    font-size: 28px;
-    line-height: 45px;
-  }
-}
-
-@media (max-width: 650px) {
-  .parent {
-    flex-direction: column;
-  }
-  .parent > div {
-    text-align: center !important;
-    padding: 2rem 0px;
-    margin: 0% !important;
-  }
-  .parent > div:nth-child(1) > * {
-    padding-left: 0rem;
-  }
-
   .Allparent {
-    padding-top:10rem;
+    background-image: url("../../Images/Header/Rectangle\ 284.png");
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 0rem;
+  }
+
+  .parent {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+    position: relative;
   }
   .parent > div:nth-child(1) {
-    padding: 2rem 0px;
+    gap: 1rem;
   }
-  .parent > div:nth-child(1) > p:nth-child(2) {
-    font-size: 26px;
-    line-height: 50px;
+  .parent > div {
+    flex: 1;
+    color: white;
+    padding: 4rem 2rem;
+  }
+  .parent > div:nth-child(1) {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: "right";
+    text-align: left;
   }
   .parent > div span {
-    font-size: 26px;
-    line-height: 50px;
+    font-family: "Poppins";
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 60px;
+    letter-spacing: 0px;
+  }
+
+  .parent > div:nth-child(1) > * {
+    padding-left: 3rem;
+  }
+
+  .parent > div:nth-child(1) > p:nth-child(1) {
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0px;
+  }
+  .parent > div:nth-child(1) > p:nth-child(2) {
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 54px;
+    letter-spacing: 0px;
+  }
+
+  .parent > div:nth-child(1) > p:nth-child(3) {
+    font-family: "Open San";
+    font-size: 17px;
+    line-height: 27px;
   }
   .Allparent > div:nth-child(2) img {
     position: absolute;
-    bottom: -1rem;
+    bottom: -2rem;
     left: 0%;
   }
-}
+
+  @media (max-width: 950px) {
+    .parent > div {
+      padding: 2rem 0px;
+    }
+    .parent > div:nth-child(2) > img {
+      width: 100%;
+    }
+
+    .parent > div:nth-child(1) > * {
+      padding-left: 2rem;
+    }
+    .parent > div:nth-child(1) > p:nth-child(2) {
+      font-size: 32px;
+      line-height: 50px;
+    }
+    .parent > div span {
+      font-size: 32px;
+      line-height: 50px;
+    }
+  }
+  @media (max-width: 800px) {
+    .parent > div:nth-child(1) > p:nth-child(2) {
+      font-size: 28px;
+      line-height: 45px;
+    }
+    .parent > div span {
+      font-size: 28px;
+      line-height: 45px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .parent {
+      flex-direction: column;
+    }
+    .parent > div {
+      text-align: center !important;
+      padding: 8rem 0px 0px 0px !important;
+      margin: 0% !important;
+    }
+    .parent > div:nth-child(1) > * {
+      padding: 0%;
+    }
+
+    .Allparent {
+      /* padding: 7rem; */
+    }
+    .parent > div:nth-child(1) {
+      padding: 2rem 0px;
+    }
+    .parent > div:nth-child(1) > p:nth-child(2) {
+      font-size: 26px;
+      line-height: 50px;
+    }
+    .parent > div span {
+      font-size: 26px;
+      line-height: 50px;
+    }
+    .Allparent > div:nth-child(2) img {
+      position: absolute;
+      bottom: -1rem;
+      left: 0%;
+    }
+  }
