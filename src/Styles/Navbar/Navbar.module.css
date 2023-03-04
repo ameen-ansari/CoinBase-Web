@@ -94,7 +94,9 @@
     align-items: center;
     justify-content: flex-start;
   }
-
+.dropdown {
+  margin-left: 75%;
+}
   .NavbarP > div:nth-child(1) img {
     margin-left: 5% !important;
   }
@@ -114,7 +116,9 @@
   .NavbarP button {
     margin-left: 80%;
   }
-  
+  .home {
+    border: 2px solid  black !important;
+  }
 }
 
 @media (max-width: 650px) {

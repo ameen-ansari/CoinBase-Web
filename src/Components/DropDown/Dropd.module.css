@@ -2,16 +2,13 @@
   width: 198px;
   position: relative;
   top: 0%;
-  left: 0%;
-  /* position: relative; */
-  /* top: 12rem; */
+  left:0%;
   font-family: "Poppin";
   font-weight: 600;
   font-size: 19px;
   z-index: 1000045;
   color: black;
   display: none;
-  /* margin-left:100% !important; */
 }
 
 .dropdownC {
@@ -40,20 +37,15 @@
 @media (max-width: 950px) {
   .dropdown {
     display: block;
-    padding-right: 3rem;
   }
 }
 @media (max-width: 870px) {
   .dropdown {
     display: block;
-    padding-right: 0rem;
-    /* margin-left:80% !important; */
-    margin-left: 35%;
   }
 }
 @media (max-width: 650px) {
   .dropdown {
     display: block;
-    padding-left: 5rem;
   }
 }

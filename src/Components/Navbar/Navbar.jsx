@@ -15,7 +15,7 @@ function Navbar() {
           <img src={logo} alt="" />
         </div>
         <div>
-          <div>
+          <div className={style.home}>
             <p>Home</p>
             <img src={indicator} alt="" />
           </div>
@@ -23,7 +23,7 @@ function Navbar() {
           <p>About Us</p>
           <p>Blogs</p>
           <p className="my-50">Contact Us</p>
-          <p className={style1.dropdown}>
+          <p className={`${style1.dropdown} ${style.dropdown}`}>
             <p>Dropdown</p>
             <ul className={`${style1.dropdownC}`}>
               <li>

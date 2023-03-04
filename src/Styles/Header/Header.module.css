@@ -6,7 +6,7 @@
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
-  padding-top:7rem;
+  padding-top: 7rem;
 }
 
 .parent {
@@ -90,7 +90,6 @@
   ) !important;
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
-  /* margin: auto; */
   font-size: 24px;
   font-weight: 600;
   font-family: "Poppins";
@@ -170,6 +169,11 @@
   .parent > div span {
     font-size: 26px;
     line-height: 50px;
+  }
+  .Allparent > div:nth-child(2) img {
+    position: absolute;
+    bottom: -1rem;
+    left: 0%;
   }
 }
 
