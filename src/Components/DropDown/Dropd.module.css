@@ -34,18 +34,19 @@
   align-items: center;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 850px) {
   .dropdown {
     display: block;
   }
 }
-@media (max-width: 870px) {
-  .dropdown {
-    display: block;
-  }
-}
-@media (max-width: 650px) {
-  .dropdown {
-    display: block;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+

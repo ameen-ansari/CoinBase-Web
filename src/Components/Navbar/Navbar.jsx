@@ -1,6 +1,6 @@
 import logo from "../../Images/Navbar/Logo.png";
 import indicator from "../../Images/Navbar/Indicator.png";
-import dropD from "../../Images/Navbar/Dropdown Button.png";
+// import dropD from "../../Images/Navbar/Dropdown Button.png";
 import style from "../../Styles/Navbar/Navbar.module.css";
 import Button1 from "../Buttons/Button1";
 import style1 from "../DropDown/Dropd.module.css";
@@ -38,15 +38,12 @@ function Navbar() {
         </div>
         <div>
           <div>
-            <p>
-              Sell Bitcoin/ Giftcard
-            </p>
-              <img src={dropD} alt="" />
+            <p>Sell Bitcoin/ Giftcard&#9660;</p>
           </div>
           <Button1
             value="LOGIN"
             color="white"
-            bgColor=" linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)"
+            bgColor="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)"
           />
         </div>
       </div>
