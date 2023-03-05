@@ -10,7 +10,7 @@
 
 .NavbarP > div:nth-child(2) {
   display: flex;
-  flex: 1.5;
+  flex: 3;
   justify-content: space-between;
   align-items: center;
 }
@@ -29,7 +29,8 @@
     flex: 2;
   }
   .NavbarP > div:nth-child(2) {
-    flex: 1.5;
+    gap: 1rem;
+    /* flex: 1.5; */
   }
   .NavbarP > div:nth-child(3) {
     flex: 1.5;
@@ -156,8 +157,11 @@
 }
 
 @media (max-width:1300px) {
+  .NavbarP {
+    gap: 1rem;
+  }
   .NavbarP div:nth-child(2) {
-    flex: 2;
+    flex: 2.5;
   }
   
 }
