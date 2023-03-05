@@ -149,10 +149,17 @@
   letter-spacing: 0px;
   cursor: pointer;
 }
-.offcanvas > div:nth-child(1) p:nth-child(1) {
+.cencel {
    position: absolute;
-   top: 1rem;
-   right: 1rem;
+   top: 5rem;
+   right: 5rem;
+}
+
+@media (max-width:1300px) {
+  .NavbarP div:nth-child(2) {
+    flex: 2;
+  }
+  
 }
 
 @media (max-width:500px){

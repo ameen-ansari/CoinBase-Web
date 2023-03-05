@@ -12,29 +12,35 @@ function Navbar() {
     navigate("/");
     let offC = document.getElementById("offC");
     offC.style.bottom = "100%";
-    offC.style.transition = "1s";
+    offC.style.transition = "0.5s";
   };
   let pushAbout = () => {
     navigate("/about");
     let offC = document.getElementById("offC");
     offC.style.bottom = "100%";
-    offC.style.transition = "1s";
+    offC.style.transition = "0.5s";
   };
   let pushBlogs = () => {
     navigate("/blogs");
     let offC = document.getElementById("offC");
     offC.style.bottom = "100%";
-    offC.style.transition = "1s";
+    offC.style.transition = "0.5s";
+  };
+  let pushBlogsC = () => {
+    navigate("/blogcontent");
+    let offC = document.getElementById("offC");
+    offC.style.bottom = "100%";
+    offC.style.transition = "0.5s";
   };
   let showOffC = () => {
     let offC = document.getElementById("offC");
     offC.style.bottom = "0%";
-    offC.style.transition = "1s";
+    offC.style.transition = "0.5s";
   };
   let removeOffC = () => {
     let offC = document.getElementById("offC");
     offC.style.bottom = "100%";
-    offC.style.transition = "1s";
+    offC.style.transition = "0.5s";
   };
   return (
     <>
@@ -61,8 +67,12 @@ function Navbar() {
               <li>
                 <p onClick={pushBlogs}>Blogs</p>
               </li>
+              <li>
+                <p onClick={pushBlogsC}>Contact Us</p>
+              </li>
             </ul>
           </p>
+          <p onClick={pushBlogsC}>Contact Us</p>
         </div>
         <div>
           <div>
@@ -87,10 +97,11 @@ function Navbar() {
       </div>
       <div id="offC" className={style.offcanvas}>
         <div>
-          <p onClick={removeOffC}>X</p>
+          <p className={style.cencel} onClick={removeOffC}>X</p>
           <p onClick={pushSlash}>Home</p>
           <p onClick={pushAbout}>About</p>
           <p onClick={pushBlogs}>Blogs</p>
+          <p onClick={pushBlogsC}>Contact Us</p>
           <Button1
             value="LogIn"
             color="white"
