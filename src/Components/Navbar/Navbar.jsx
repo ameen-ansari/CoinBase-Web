@@ -46,7 +46,7 @@ function Navbar() {
     <>
       <div className={style.NavbarP}>
         <div>
-          <img src={logo} alt="" />
+          <img src={logo} alt="" onClick={pushSlash}/>
         </div>
         <div>
           <div className={style.home}>
@@ -88,7 +88,7 @@ function Navbar() {
       <div className={style.resNP}>
         <div className={style.resN}>
           <div>
-            <img src={logo} alt="" />
+            <img onClick={pushSlash} src={logo} alt="" />
           </div>
           <div>
             <img id="brg" onClick={showOffC} src={brg} alt="" />
