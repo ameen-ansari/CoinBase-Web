@@ -11,7 +11,7 @@ import img1 from "../../Images/Header/Quality.png";
 function AboutPHeader() {
   return (
     <>
-      <div className={`${style.Allparent}`}>
+      <div id="nav2" className={`${style.Allparent}`}>
         <div className={`${style.parent} flex`}>
           <div>
             <p>HOME/About Us</p>

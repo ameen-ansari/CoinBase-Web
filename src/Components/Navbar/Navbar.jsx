@@ -36,6 +36,7 @@ function Navbar() {
     let offC = document.getElementById("offC");
     offC.style.bottom = "0%";
     offC.style.transition = "0.5s";
+    console.log("SomeThing");
   };
   let removeOffC = () => {
     let offC = document.getElementById("offC");
@@ -46,7 +47,7 @@ function Navbar() {
     <>
       <div className={style.NavbarP}>
         <div>
-          <img src={logo} alt="" onClick={pushSlash}/>
+          <img src={logo} alt="" onClick={pushSlash} />
         </div>
         <div>
           <div className={style.home}>
@@ -91,13 +92,17 @@ function Navbar() {
             <img onClick={pushSlash} src={logo} alt="" />
           </div>
           <div>
-            <img id="brg" onClick={showOffC} src={brg} alt="" />
+            <a href="#nav2">
+              <img id="brg" onClick={showOffC} src={brg} alt="" />
+            </a>
           </div>
         </div>
       </div>
       <div id="offC" className={style.offcanvas}>
         <div>
-          <p className={style.cencel} onClick={removeOffC}>X</p>
+          <p className={style.cencel} onClick={removeOffC}>
+            X
+          </p>
           <p onClick={pushSlash}>Home</p>
           <p onClick={pushAbout}>About</p>
           <p onClick={pushBlogs}>Blogs</p>

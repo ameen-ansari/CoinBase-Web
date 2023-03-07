@@ -9,7 +9,7 @@ import indicator from "../../Images/Navbar/Indicator.png";
 function Header() {
   return (
     <>
-      <div className={`${style.Allparent}`}>
+      <div id="nav2" className={`${style.Allparent}`}>
         <div className={`${style.parent} flex`}>
           <div>
             <p>

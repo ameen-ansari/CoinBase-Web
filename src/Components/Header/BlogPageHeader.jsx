@@ -5,7 +5,7 @@ import pathTYpe from "../../Images/Header/Path 4.png";
 
 function BlogPageHeader() {
   return (
-    <div className={`${style.Allparent}`}>
+    <div id="nav2" className={`${style.Allparent}`}>
       <div className={`${style.parent} flex`}>
         <div>
           <p>HOME/Blog</p>
