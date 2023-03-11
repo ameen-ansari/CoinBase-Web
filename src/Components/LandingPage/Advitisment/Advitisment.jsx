@@ -1,11 +1,11 @@
 import React from "react";
-import style from "../../../Styles/Advitisment/Advitisment.module.css";
+import style from "../../../Styles/LandingPage/Advitisment/Advitisment.module.css";
 import ind from "../../../Images/Navbar/Indicator.png";
-import appleT from "../../../Images/Advitisment/app-store-logo 1.png";
-import playT from "../../../Images/Advitisment/get-it-on-google-play-badge-png-google-play-badge-png-505 1 (1).png";
-import img1 from "../../../Images/Advitisment/X-1.png";
-import img2 from "../../../Images/Advitisment/X-2.png";
-import img3 from "../../../Images/Advitisment/Path 4.4.png";
+import appleT from "../../../Images/LandingPage/Advitisment/app-store-logo 1.png";
+import playT from "../../../Images/LandingPage/Advitisment/get-it-on-google-play-badge-png-google-play-badge-png-505 1 (1).png";
+import img1 from "../../../Images/LandingPage/Advitisment/X-1.png";
+import img2 from "../../../Images/LandingPage/Advitisment/X-2.png";
+import img3 from "../../../Images/LandingPage/Advitisment/Path 4.4.png";
 import Button from "../../Buttons/Button1";
 
 function Advitisment() {

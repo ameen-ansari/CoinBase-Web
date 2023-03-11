@@ -1,7 +1,7 @@
 import style from "../../Styles/AboutPage/TeamsComp.module.css";
 import React from "react";
 import ind from "../../Images/Navbar/Indicator.png";
-import tree from "../../Images/TeamsComp/Tree.png";
+import tree from "../../Images/LandingPage/TeamsComp/Tree.png";
 
 function TeamsComp() {
   return (

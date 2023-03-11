@@ -1,15 +1,14 @@
-import style from "../../../Styles/RatesType/RatesTypeS.module.css";
-import img1 from "../../../Images/RatesTypeS/Path 4 (1).png";
-import img2 from "../../../Images/RatesTypeS/Path 4.1.png";
-import btc from "../../../Images/RatesTypeS/bitcoin.png";
+import style from "../../../Styles/LandingPage/RatesType/RatesTypeS.module.css";
+import img1 from "../../../Images/LandingPage/RatesTypeS/Path 4 (1).png";
+import img2 from "../../../Images/LandingPage/RatesTypeS/Path 4.1.png";
+import btc from "../../../Images/LandingPage/RatesTypeS/bitcoin.png";
 import Button1 from "../../Buttons/Button1";
-import botomH from "../../../Images/RatesTypeS/Ñëîé 1 1 (1).png";
+import botomH from "../../../Images/LandingPage/RatesTypeS/Ñëîé 1 1 (1).png";
 import indicator from "../../../Images/Navbar/Indicator.png";
-import wel from "../../../Images/RatesTypeS/xy.png";
-import arrow from "../../../Images/RatesTypeS/Transfer.png";
-import darrow from "../../../Images/RatesTypeS/Double transfer.png";
-import eth from "../../../Images/RatesTypeS/Eth.png";
-import bb from "../../../Images/RatesTypeS/bank-building.png";
+import arrow from "../../../Images/LandingPage/RatesTypeS/Transfer.png";
+import darrow from "../../../Images/LandingPage/RatesTypeS/Double transfer.png";
+import eth from "../../../Images/LandingPage/RatesTypeS/Eth.png";
+import bb from "../../../Images/LandingPage/RatesTypeS/bank-building.png";
 
 function RatesTypeS() {
   return (
