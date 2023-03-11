@@ -1,4 +1,4 @@
-import Header from '../Components/Header/Header'
+import Header from '../Components/LandingPage/Header/Header'
 import RatesTypeC from '../Components/LandingPage/RatesTypeS/RatesTypeS'
 import CardTypeC from '../Components/LandingPage/Blogs/CardType'
 import BlogsTypeC from '../Components/LandingPage/Blogs/Blogs'

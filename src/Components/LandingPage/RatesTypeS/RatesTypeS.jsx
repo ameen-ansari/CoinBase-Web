@@ -124,7 +124,7 @@ function RatesTypeS() {
         </div>
         <div>
           <div>
-            <img src={wel} alt="" />
+            <p className={style.gewc}>Great Experience with Coinbase</p>
             <img src={indicator} alt="" />
           </div>
           <p>

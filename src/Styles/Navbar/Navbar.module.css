@@ -15,6 +15,10 @@
   align-items: center;
 }
 
+.activePage {
+  border-bottom: 3px solid #fd749b;
+}
+
 .NavbarP > div:nth-child(3) {
   display: flex;
   flex: 2.5;
@@ -40,9 +44,10 @@
 .NavbarP p {
   font-family: "Poppins";
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 100;
   line-height: 21px;
   letter-spacing: 0px;
+  text-align: left;
   cursor: pointer;
 }
 
@@ -64,6 +69,9 @@
     padding: 0px 2px;
     flex: 2.5 !important;
     gap: 0.2rem;
+  }
+  .NavbarP p {
+    text-align: right;
   }
 }
 @media (max-width: 700px) {
@@ -127,14 +135,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image:url('../../Images/Header/Rectangle\ 284.png');
+  background-image: url("../../Images/Header/Rectangle\ 284.png");
   color: white;
   transition: 1.5s;
   /* position: relative; */
   display: none;
 }
 
-.offcanvas  > div{
+.offcanvas > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,22 +159,21 @@
   cursor: pointer;
 }
 .cencel {
-   position: absolute;
-   top: 5rem;
-   right: 1rem;
+  position: absolute;
+  top: 5rem;
+  right: 1rem;
 }
 
-@media (max-width:1300px) {
+@media (max-width: 1300px) {
   .NavbarP {
     gap: 1rem;
   }
   .NavbarP div:nth-child(2) {
     flex: 2.5;
   }
-  
 }
 
-@media (max-width:500px){
+@media (max-width: 500px) {
   .offcanvas {
     display: flex !important;
   }

@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../Styles/Header/BlogContentP.module.css";
+import style from "../../Styles/BlogContentPage/BlogContentP.module.css";
 import pathTYpe from "../../Images/Header/Path 4.png";
 
 function BlogContentHeader() {

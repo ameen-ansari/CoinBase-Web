@@ -1,5 +1,5 @@
 .Allparent {
-  background-image: url("../../Images/Header/Rectangle\ 284.png");
+background-image: url("../../../Images/Header/Rectangle\ 284.png");
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -103,7 +103,9 @@
   position: absolute;
   bottom: -2rem;
   left: 0%;
+  width: 100vw;
 }
+
 
 @media (max-width: 950px) {
   .parent > div {
@@ -157,7 +159,7 @@
   }
 
   .Allparent {
-    padding-top: 8rem ;
+    padding-top: 8rem;
   }
   .parent > div:nth-child(1) {
     padding: 2rem 0px;
@@ -171,6 +173,7 @@
     line-height: 50px;
   }
   .Allparent > div:nth-child(2) img {
+    /* border: 2px solid red; */
     position: absolute;
     bottom: -1rem;
     left: 0%;
@@ -180,7 +183,7 @@
 /* Next Section */
 .headerBottomSideP {
   display: flex;
-  margin-top: 2rem;
+  margin: 2rem 0px;
 }
 
 .headerBottomSideP > div {
@@ -243,5 +246,16 @@
   }
   .headerBottomSideP > div:nth-child(2) > p {
     padding: 0rem 0rem !important;
+  }
+}
+
+
+@media (min-width:1430px) {
+  .Allparent {
+    padding: 8rem 0px;
+  }
+  .Allparent > div:nth-child(2) img {
+    bottom: -3rem !important;
+    left: 0%;
   }
 }

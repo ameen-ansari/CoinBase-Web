@@ -1,4 +1,4 @@
-import style from "../../Styles/Header/AboutPHeader.module.css";
+import style from "../../Styles/AboutPage/AboutPHeader.module.css";
 import pathTYpe from "../../Images/Header/Path 4.png";
 import img from "../../Images/Header/IMG (1).png";
 import indicator from "../../Images/Navbar/Indicator.png";

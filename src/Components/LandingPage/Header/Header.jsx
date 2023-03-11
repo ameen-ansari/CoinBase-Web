@@ -1,10 +1,10 @@
 import React from "react";
-import style from "../../Styles/Header/Header.module.css";
-import img from "../../Images/Header/IMG.png";
-import pathTYpe from "../../Images/Header/Path 4.png";
-import Button1 from "../Buttons/Button1";
-import botomH from "../../Images/Header/Layer 2.png";
-import indicator from "../../Images/Navbar/Indicator.png";
+import style from '../../../Styles/LandingPage/Header/Header.module.css'
+import img from "../../../Images/Header/IMG.png";
+import pathTYpe from "../../../Images/Header/Path 4.png";
+import Button1 from "../../Buttons/Button1";
+import botomH from "../../../Images/Header/Layer 2.png";
+import indicator from "../../../Images/Navbar/Indicator.png";
 
 function Header() {
   return (

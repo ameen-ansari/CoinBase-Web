@@ -70,6 +70,20 @@
   left: 0%;
 }
 
+@media (min-width: 1450px) {
+  .Allparent > div:nth-child(2) img {
+    bottom: -3rem;
+    width: 100vw;
+  }
+
+  .Allparent {
+    padding: 10rem 0px;
+  }
+
+  .P2 {
+    padding-top: 4rem !important; 
+  }
+}
 @media (max-width: 950px) {
   .parent > div {
     padding: 2rem 0px;
@@ -115,7 +129,7 @@
   }
 
   .Allparent {
-    padding-top:6rem;
+    padding-top: 6rem;
   }
   .parent > div:nth-child(1) {
     padding: 2rem 0px;
@@ -138,6 +152,7 @@
 .P2 {
   margin-top: 2rem;
 }
+
 
 .wel {
   background: linear-gradient(

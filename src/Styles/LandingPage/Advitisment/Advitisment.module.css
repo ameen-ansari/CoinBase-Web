@@ -50,6 +50,7 @@
 .parent2 {
   width: 100%;
   background-image: url("../../Images/Advitisment/Rectangle 3.png");
+  background-size: 100%;
   background-repeat: no-repeat;
   z-index: 9;
   margin-top: 2rem;
@@ -59,6 +60,17 @@
   position: relative !important ;
   bottom: 2rem;
   z-index: 9;
+}
+
+@media (min-width:1400px) {
+  .parent2 > img {
+    position: relative !important ;
+
+    bottom: 4rem;
+    z-index: 9;
+    width: 100vw !important; 
+  }
+    
 }
 .parent2 > div {
   margin-top: 2rem;

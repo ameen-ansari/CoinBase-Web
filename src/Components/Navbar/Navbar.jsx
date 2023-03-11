@@ -1,36 +1,43 @@
 import logo from "../../Images/Navbar/Logo.svg";
-// import indicator from "../../Images/Navbar/Indicator.png";
 import style from "../../Styles/Navbar/Navbar.module.css";
 import Button1 from "../Buttons/Button1";
-import style1 from "../DropDown/Dropd.module.css";
+import style1 from "../../Styles/Navbar/Dropd.module.css";
 import brg from "../../Images/Navbar/Group.svg";
-import { useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 function Navbar() {
-  const navigate = useNavigate();
+  let navigate = useNavigate();
+  const [activePage, setActivePage] = useState("home");
+
   let pushSlash = () => {
     navigate("/");
     let offC = document.getElementById("offC");
     offC.style.bottom = "100%";
     offC.style.transition = "0.5s";
+    setActivePage("home");
   };
+
   let pushAbout = () => {
     navigate("/about");
     let offC = document.getElementById("offC");
     offC.style.bottom = "100%";
     offC.style.transition = "0.5s";
+    setActivePage("about");
   };
   let pushBlogs = () => {
     navigate("/blogs");
     let offC = document.getElementById("offC");
     offC.style.bottom = "100%";
     offC.style.transition = "0.5s";
+    setActivePage("blog");
   };
   let pushBlogsC = () => {
     navigate("/blogcontent");
     let offC = document.getElementById("offC");
     offC.style.bottom = "100%";
     offC.style.transition = "0.5s";
+    setActivePage("contact");
   };
   let showOffC = () => {
     let offC = document.getElementById("offC");
@@ -51,11 +58,29 @@ function Navbar() {
         </div>
         <div>
           <div className={style.home}>
-            <p onClick={pushSlash}>Home</p>
+            <p
+              className={activePage === "home" ? style.activePage : ""}
+              id="slash"
+              onClick={pushSlash}
+            >
+              Home
+            </p>
             {/* <img src={indicator} alt="" /> */}
           </div>
-          <p onClick={pushAbout}>About Us</p>
-          <p onClick={pushBlogs}>Blogs</p>
+          <p
+            className={activePage === "about" ? style.activePage : ""}
+            id="slashA"
+            onClick={pushAbout}
+          >
+            About Us
+          </p>
+          <p
+            id="slashB"
+            className={activePage === "blog" ? style.activePage : ""}
+            onClick={pushBlogs}
+          >
+            Blogs
+          </p>
           <p className={`${style1.dropdown} ${style.dropdown}`}>
             <p>More</p>
             <ul className={`${style1.dropdownC}`}>
@@ -73,7 +98,13 @@ function Navbar() {
               </li>
             </ul>
           </p>
-          <p onClick={pushBlogsC}>Contact Us</p>
+          <p
+            id="slashC"
+            className={activePage === "contact" ? style.activePage : ""}
+            onClick={pushBlogsC}
+          >
+            Contact Us
+          </p>
         </div>
         <div>
           <div>

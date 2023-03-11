@@ -1,6 +1,6 @@
 import Form from "../Components/AboutPage/Form";
 import TeamsComp from "../Components/AboutPage/TeamsComp";
-import Header from "../Components/Header/AboutPHeader";
+import Header from "../Components//AboutPage/AboutPHeader";
 import Footer from '../Components/Footer/Footer'
 
 function AboutPage() {

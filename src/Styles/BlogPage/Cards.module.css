@@ -16,6 +16,7 @@
   border-top-right-radius: 12px;
   border-top-left-radius: 12px;
   border: 2px solid white;
+  width: 100%;
 }
 .card > div > p:nth-child(1) {
   background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
