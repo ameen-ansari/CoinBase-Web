@@ -117,6 +117,7 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 35px;
+  text-align: center;
 }
 
 .parent4 > div:nth-child(2) > p {
