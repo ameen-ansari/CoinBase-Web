@@ -37,7 +37,7 @@
   .parent > div span {
     font-family: "Poppins";
     font-size: 32px;
-    font-weight: 300;
+    font-weight: 700;
     line-height: 60px;
     letter-spacing: 0px;
   }
@@ -53,17 +53,12 @@
     line-height: 18px;
     letter-spacing: 0px;
   }
-  .parent > div:nth-child(1) > p:nth-child(2) {
-    font-family: "Open Sans";
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 54px;
-    letter-spacing: 0px;
-  }
+
   
   .parent > div:nth-child(1) > p:nth-child(3) {
-    font-family: "Open San";
-    font-size: 17px;
+    font-family: "Poppins";
+    font-size: 10px;
+    font-weight: 400;
     line-height: 27px;
   }
   .Allparent > div:nth-child(2) img {

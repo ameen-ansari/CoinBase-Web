@@ -3,6 +3,7 @@ import ind from "../../../Images/Navbar/Indicator.png";
 import Button from "../../Buttons/Button1";
 import img from "../../../Images/LandingPage/Blogs/Path 4.2.png";
 import HC from "../../../Images/LandingPage/Blogs/Happy Customers.png";
+import HC2 from "../../../Images/LandingPage/Blogs/Testimonial (1).svg";
 import nimg from "../../../Images/LandingPage/RatesTypeS/Path 4 (1).png";
 
 function Blogs() {
@@ -60,8 +61,9 @@ function Blogs() {
               pic to view their testimonials.
             </p>
           </div>
-          <div>
+          <div className="relative">
             <img src={HC} alt="" />
+            <img className="absolute right-0 bottom-1/4 w-1/4 h-1/4" src={HC2} alt="" />
           </div>
         </div>
         <img src={img} alt="" />

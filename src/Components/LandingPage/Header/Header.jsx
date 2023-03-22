@@ -21,7 +21,7 @@ function Header() {
               the best rate, why not give us a trial.
             </p>
             <div>
-              <p>GET STARTED</p>
+              <p className="cursor-pointer">GET STARTED</p>
             </div>
           </div>
           <div>

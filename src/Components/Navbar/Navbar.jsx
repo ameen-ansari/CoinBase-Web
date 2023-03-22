@@ -3,7 +3,7 @@ import style from "../../Styles/Navbar/Navbar.module.css";
 import Button1 from "../Buttons/Button1";
 import style1 from "../../Styles/Navbar/Dropd.module.css";
 import brg from "../../Images/Navbar/Group.svg";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 function Navbar() {
@@ -107,8 +107,34 @@ function Navbar() {
           </p>
         </div>
         <div>
-          <div>
+          <div className={style.sellbitcoin}>
             <p>Sell Bitcoin/ Giftcard&#9660;</p>
+          <div
+            id="dropdownOffset"
+            className={`z-10 mt-[10px] ml-12 border-[1px] border-[#E0E0E0] absolute  opacity-80 bg-white divide-y divide-gray-100 rounded-lg shadow w-36 dark:bg-white-700 block}  ${style.poc} `}
+          >
+            <ul
+              className=" text-sm  text-black dark:text-gray-200"
+              aria-labelledby="dropdownDefault"
+            >
+              <li className={style.li1}>
+              <a
+                  href="#"
+                  className="block pl-4 py-3 mt-2 font-normal text-sm rounded-bl-lg rounded-br-lg dark:hover:bg-white "
+                >
+                  Sell Giftcard
+                </a>
+              </li>
+              <li className={style.li2}>
+                <a
+                  href="#"
+                  className="block pl-4 py-3 mt-2 font-normal text-sm rounded-bl-lg rounded-br-lg dark:hover:bg-white "
+                >
+                  Sell Giftcard
+                </a>
+              </li>
+            </ul>
+          </div>
           </div>
           <Button1
             value="LOGIN"
