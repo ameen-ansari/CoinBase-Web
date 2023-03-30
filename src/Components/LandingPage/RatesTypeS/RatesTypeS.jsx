@@ -15,102 +15,165 @@ function RatesTypeS() {
     <>
       <div className={style.parent}>
         <img src={img1} alt="" />
-        <div className={style.card}>
+        <div className={`${style.card}`}>
           <div className={style.cardHeader}>
-            <div>
+            <div className="py-2">
               <div>
                 <p className={style.gradient}>OUR RATES</p>
               </div>
-              <div>
+              <div className={style.gradientType}>
                 <p className={style.gradient}>OUR RESERVES</p>
               </div>
-              <div>
+              <div className={style.gradientType}>
                 <p className={style.gradient}>LATEST EXCHANGES</p>
               </div>
             </div>
           </div>
-
-          <hr style={{ width: "100%" }} />
-
-          <div className={style.cardBodyP}>
-            <div className={style.cardBody}>
-              <div>
-                <div className={style.littelCard}>
-                  <div>
-                    <div>
-                      <img src={btc} alt="bitcoin" />
-                      <p>BTC</p>
-                    </div>
-                    <div>
-                      <p>We Buy @ ₦350/$</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <img src={btc} alt="bitcoin" />
-                      <p>Bitcoin</p>
-                    </div>
-                    <p>NGN</p>
-                  </div>
-                  <div>
-                    <div>
-                      <p>
-                        BitCoin BTC
-                        <img src={arrow} alt="bitcoin" />
-                      </p>
-                    </div>
-                    <p>Bank transfer NGN</p>
-                  </div>
+          <hr style={{ width: "100%" }}/>
+          <div className=" mr-16 mt-2 flex justify-end items-end">
+            <button>8 hours ago</button>
+          </div>
+          <div className={`${style.cardsParent} py-4 flex`}>
+            {/* div1 */}
+            <div
+              style={{ flex: 1 }}
+              className="flex flex-col gap-10 justify-center align-middle px-10"
+            >
+              <div className="flex justify-between items-center">
+                <div className="flex gap-3">
+                  <img src={btc} alt="" />
+                  <p className="text-[14px] font-normal">BTC</p>
                 </div>
-                <div>
-                  <div>
-                    {/* <p>We Buy @ ₦350/$</p> */}
-                  </div>
-                  <div>
-                    {/* <p>#3452030300303.24/$</p> */}
-                  </div>
-                  <div></div>
+                <div className="flex flex-col gap-5">
+                  <p className="text-[14px] font-normal">
+                    We Buy @{" "}
+                    <span className="text-[14px] font-bold">₦350/$</span>
+                  </p>
+                  <p className="text-[14px] font-normal">
+                    We Sell @{" "}
+                    <span className="text-[14px] font-bold">₦350/$</span>
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-between  items-center">
+                <div className="flex gap-3">
+                  <img src={eth} alt="" />
+                  <p className="text-[14px] font-normal">ETH</p>
+                </div>
+                <div className="flex flex-col  gap-5">
+                  <p className="text-[14px] font-normal">
+                    We Buy @{" "}
+                    <span className="text-[14px] font-bold">₦350/$</span>
+                  </p>
+                  <p className="text-[14px] font-normal">
+                    We Sell @{" "}
+                    <span className="text-[14px] font-bold">₦350/$</span>
+                  </p>
                 </div>
               </div>
             </div>
-            <div className={style.cardBody}>
-              <div>
-                <div className={style.littelCard}>
-                  <div>
-                    <div>
-                      <img src={eth} alt="bitcoin" />
-                      <p>ETH</p>
-                    </div>
-                    <div>
-                      <p>We Buy @ ₦350/$</p>
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-                      <img src={bb} alt="bitcoin" />
-                      <p>Bank Transfer</p>
-                    </div>
-                    <p>399.98 BTC</p>
-                  </div>
-                  <div>
-                    <div>
-                      <p>
-                      1.16 BTC
-                        <img src={darrow} alt="bitcoin" />
-                      </p>
-                    </div>
-                    <p>696152299929.23 NGN</p>
-                    {/* <p></p> */}
-                  </div>
+            {/* div2 */}
+            {/* <div className={style.cardHeader}> */}
+            <div
+              className={`${style.heading} py-2 flex justify-center items-center`}
+            >
+              <div className="py-2">
+                <p className={style.gradient}>OUR RESERVES</p>
+              </div>
+              <hr style={{ width: "100%" }} />
+
+              {/* </div> */}
+            </div>
+            <div
+              style={{ flex: 1 }}
+              className="flex flex-col gap-10 justify-center align-middle px-10"
+            >
+              <div className="flex justify-between items-start pt-10">
+                <div className="flex gap-3 items-center">
+                  <img src={bb} alt="" />
+                  <p className="text-[14px] font-normal">Bank Transfer</p>
                 </div>
-                <div>
-                  <div>
-                    {/* <p>We Buy @ ₦350/$</p> */}
-                  </div>
-                  <div>
-                  </div>
-                  <div></div>
+                <div className="flex flex-col gap-4 items-end">
+                  <p className="text-[14px] font-normal">NGN</p>
+                  <p className="text-[14px] font-bold">#3452030300303.24/$</p>
                 </div>
+              </div>
+              <div className="flex justify-between items-center">
+                <div className="flex gap-3 items-center">
+                  <img src={btc} alt="" />
+                  <p className="text-[14px] font-normal">Bitcoin</p>
+                </div>
+                <p className="text-[14px] font-normal">
+                  <span className="text-[14px] font-bold">399.98</span>
+                  BTC
+                </p>
+              </div>
+              <div className="flex justify-between items-center">
+                <div className="flex gap-3 items-center">
+                  <img src={eth} alt="" />
+                  <p className="text-[14px] font-normal">Ethereum</p>
+                </div>
+                <p className="text-[14px] font-normal">
+                  <span className="text-[14px] font-bold">1000.00</span> ETH
+                </p>
+              </div>
+            </div>
+            {/* div3 */}
+            {/* <div className={style.cardHeader}> */}
+            <div
+              className={`${style.heading} py-10 flex justify-center items-center`}
+            >
+              <div className="py-2">
+                <p className={style.gradient}>LATEST EXCHANGES</p>
+              </div>
+              <hr style={{ width: "100%" }} />
+              {/* </div> */}
+            </div>
+            <div
+              style={{ flex: 1 }}
+              className="flex flex-col gap-5 justify-center align-middle px-10"
+            >
+              <div className="flex">
+                <p className="text-[14px] font-normal">Bitcoin BTC</p>
+
+                <img
+                  className={style.arrows}
+                  width={10}
+                  height={10}
+                  src={arrow}
+                  alt=""
+                />
+                {/* <span>&rarr;</span> */}
+                <p className="text-[14px] font-normal">Bank Transfer NGN</p>
+              </div>
+              <div className="flex">
+                <p className="text-[14px] font-bold">
+                  1.6<span className="text-[14px] font-normal">BTC</span>
+                </p>
+                <img
+                  className={style.arrows}
+                  width={10}
+                  height={10}
+                  src={darrow}
+                  alt=""
+                />
+                <p className="text-[14px] font-bold">
+                  696152299929.23
+                  <span className="text-[14px] font-normal">NGN</span>
+                </p>
+              </div>
+              <hr />
+              <div className="flex">
+                <p className="text-[14px] font-normal">Amazon Card</p>
+                {/* <span>&rarr;</span> */}
+                <img
+                  className={style.arrows}
+                  width={10}
+                  height={10}
+                  src={arrow}
+                  alt=""
+                />
+                <p className="text-[14px] font-normal">Bank Transfer NGN</p>
               </div>
             </div>
           </div>

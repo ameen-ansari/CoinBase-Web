@@ -198,6 +198,7 @@ background-image: url("../../../Images/Header/Rectangle\ 284.png");
 .headerBottomSideP {
   display: flex;
   margin: 2rem 0px;
+  padding-bottom: 2rem;
 }
 
 .headerBottomSideP > div {

@@ -1,10 +1,12 @@
 .Allparent {
     background-image: url("../../Images/BlogContent/IMG (3).png");
     width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     background-size: cover;
+    min-height: 50vw;
     background-repeat: no-repeat;
     padding-top: 1rem;
   }
