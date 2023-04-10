@@ -1,6 +1,8 @@
 .P1 {
   margin-top: 2rem !important;
   padding: 2rem 5rem;
+  width: 63%;
+  margin: auto;
 }
 
 .P1 > div:nth-child(1) {
@@ -22,16 +24,26 @@
 .P1 > div:nth-child(1) > div:nth-child(6) {
   display: flex;
 }
-.P1 > div:nth-child(1) > div:nth-child(6) > div {
+.P1 > div:nth-child(1) > div:nth-child(6) > div:nth-child(1) {
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   justify-content: center;
   align-items: center;
+  padding-right: 3rem;
+}
+.P1 > div:nth-child(1) > div:nth-child(6) > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
 }
 .P1 > div:nth-child(1) > div:nth-child(6) > div > img {
-  width: 70%;
+  display: block;
+  margin: auto;
+  width: 90%;
+  border-radius: 15px;
 }
 
 @media (max-width: 600px) {
@@ -48,6 +60,8 @@
 }
 
 .P2 {
+  width: 64%;
+  margin: auto;
   padding: 2rem 5rem;
   display: flex;
 }
@@ -103,6 +117,8 @@
 .P3 {
   display: flex;
   padding: 2rem 5rem;
+  width: 64%;
+  margin: auto;
 }
 
 .P3 > div:nth-child(1) {
@@ -119,6 +135,8 @@
   letter-spacing: 0px;
   text-align: left;
 }
+
+
 .P3 > div:nth-child(1) > p:nth-child(2) {
   font-family: "Poppins";
   font-size: 12px;
@@ -127,6 +145,16 @@
   letter-spacing: 0px;
   text-align: left;
   color: #989898;
+}
+@media (min-width: 1350px) {
+  .P3 > div:nth-child(1) > p:nth-child(1) {
+    width: 70%;
+  }
+  .P3 > div:nth-child(2) > p:nth-child(1) {
+    width: 50%;
+    margin-left: 50%;
+  }
+
 }
 .P3 > div:nth-child(2) > p:nth-child(1) {
   background: linear-gradient(
@@ -186,6 +214,10 @@
     text-align: center;
   }
 }
+.P4 {
+  width: 64%;
+  margin: auto;
+}
 
 .P4 > p:nth-child(1) {
   font-family: "Poppins";
@@ -216,6 +248,23 @@
         text-align: center !important;
         padding: 0.3rem;
     }
+}
+
+@media (max-width: 1200px) {
+  .P1 , .P2 , .P3 , .P4 {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .P1 , .P2 , .P3 , .P4 {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .P1 , .P2 , .P3 , .P4 {
+    width: 98%;
+  }
 }
 
 

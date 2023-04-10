@@ -6,8 +6,8 @@ function FormT() {
   return (
     <div className={style.P1}>
       <div>
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Name *" />
+        <input type="text" placeholder="Email *" />
       </div>
       <div>
         <textarea
