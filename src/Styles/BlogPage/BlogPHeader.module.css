@@ -10,7 +10,8 @@
   }
 
   .parent {
-    width: 100%;
+    width: 85%;
+    margin: auto;
     justify-content: center;
     align-items: center;
     padding-bottom: 5rem;
@@ -57,6 +58,7 @@
     font-weight: 700;
     line-height: 54px;
     letter-spacing: 0px;
+    width: 75%;
   }
 
   .parent > div:nth-child(1) > p:nth-child(3) {
@@ -64,6 +66,7 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 27px;
+    width: 82%;
   }
   .Allparent > div:nth-child(2) img {
     position: absolute;
@@ -83,6 +86,15 @@
   }
 
 
+  @media (max-width: 1200px) {
+    .parent > div:nth-child(1) > p:nth-child(2) {
+      width: 90%;
+    }
+    .parent > div:nth-child(1) > * {
+      padding-left: 1rem;
+    }
+  
+  }
   @media (max-width: 950px) {
     .parent > div {
       padding: 2rem 0px;
@@ -112,15 +124,20 @@
       font-size: 28px;
       line-height: 45px;
     }
+    .parent {
+      width: 95%;
+      padding-top: 3rem;
+    }
   }
 
   @media (max-width: 650px) {
     .parent {
       flex-direction: column;
+      padding: 2rem 0px 10rem 0px;
     }
     .parent > div {
       text-align: center !important;
-      padding: 8rem 0px 0px 0px !important;
+      padding: 4rem 0px 0px 0px !important;
       margin: 0% !important;
     }
     .parent > div:nth-child(1) > * {
