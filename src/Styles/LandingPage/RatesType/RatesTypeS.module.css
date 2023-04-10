@@ -1,19 +1,24 @@
 .parent {
   background-image: url(../../../Images/LandingPage/RatesTypeS/Mask.png);
-  margin: 2rem 0px;
   background-size: 100%;
   background-size: cover;
 }
 
 .parent > img:nth-child(1) {
   position: relative;
-  bottom: 3rem;
+  bottom: 10rem;
+  z-index: 1;
+}
+@media (max-width: 1150px) {
+  .parent > img:nth-child(1) {
+    bottom: 5rem;
+  }
+
 }
 
 @media (min-width: 1400px) {
   .parent > img:nth-child(1) {
     position: relative;
-    bottom: 5rem;
     width: 100vw;
     left: 0%;
   }
@@ -26,20 +31,29 @@
 }
 .card {
   background-color: #ffffff;
-  width: 70%;
+  width: 75%;
   margin: auto;
-  border-radius: 12px;
+  border-radius: 30px;
+  overflow-y: scroll;
 }
+
 
 .gewc {
   background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
+  padding-right: 50%;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 28px;
+}
+
+@media (max-width: 1360px) {
+  .gewc {
+    padding-right: 10% ;
+  }
+  
 }
 
 @media (max-width: 800px) {
@@ -58,13 +72,14 @@
   }
 }
 .cardHeader {
-  /* text-align: center; */
   display: flex;
   justify-content: center;
   align-items: center;
   direction: column;
-  /* text-align: center; */
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
+}
+.card hr{
+  transform: scaleY(2.5);
 }
 .cardHeader > div:nth-child(1) {
   display: flex;
@@ -164,6 +179,19 @@
   flex-direction: row-reverse;
   margin-top: 2rem;
   padding: 4rem 1rem;
+  width: 80%;
+  margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .headerBottomSideP {
+    width: 90%;
+  }
+}
+@media (max-width: 1000px) {
+  .headerBottomSideP {
+    width: 95%;
+  }
 }
 
 .headerBottomSideP > div {
@@ -174,6 +202,8 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  justify-content:center ;
+  align-items: center;
 }
 .headerBottomSideP > div:nth-child(2) > div {
   display: flex;
@@ -195,18 +225,17 @@
   font-family: "Poppins";
   font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 40px;
   letter-spacing: 0px;
   text-align: left;
   /* padding-right: 2rem; */
 }
 
 .headerBottomSideP > div:nth-child(2) > button {
-  width: 30%;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 0rem 0rem 0rem 3rem;
+  align-self: flex-start;
+  margin-left: 3rem;
 }
 
 .headerBottomSideP > div:nth-child(2) > * {
@@ -285,8 +314,8 @@
   }
 }
 .arrows {
-  width: 15px !important;
-  height: 15px !important;
+  width: 14px !important;
+  height: 5px !important;
 }
 @media (max-width:700px) {
   .card{
@@ -304,6 +333,12 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .card {
+    position: relative;
+    bottom: 4rem;
+  }
+}
 .card button{
   background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
 border-radius: 5px;

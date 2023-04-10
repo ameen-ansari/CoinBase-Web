@@ -1,9 +1,16 @@
 .parent {
   background-color: #151515;
   display: flex;
-  padding: 2rem;
+  margin: auto;
+  padding:6rem 2rem 5rem 5rem;
   gap: 3rem;
   position: relative;
+}
+
+@media (max-width: 1050px) {
+  .parent{
+    padding:6rem 2rem 5rem 2rem;
+  }
 }
 
 .parent > div > p {
@@ -24,14 +31,23 @@ line-height: 24px;
   color: white;
   margin-bottom: 1rem;
   font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.parent > div:nth-child(1) > p:nth-child(2) {
+  padding-right: 8rem;
+}
+
+
+.parent > div:nth-child(4) > p:nth-child(1) {
+  padding-left: 15%;
 }
 
 .parent > div:nth-child(1) > img {
-  width: 50%;
+  width: 112px;
+  height: 22px;
 }
 .parent > div:nth-child(1) {
   flex: 2.5;
@@ -63,24 +79,35 @@ line-height: 24px;
 
 .parent > div:nth-child(4) > div {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
 }
 .parent > div:nth-child(4) > div > div {
-  width: 4rem;
-  height: 4rem;
-  background-color: #a2a2a2;
+  width: 70px;
+  height: 70px;
+  background-color: #C4C4C4;
+}
+  .parent > div:nth-child(4) > div > div:nth-child(2) {
+  background-color:  #D8D8D8;
 }
 
 .copyR {
   position: absolute;
   bottom: 0.5rem;
-  left: 2rem;
+  left: 5rem;
   color: #989898;
 }
 .FooterDivs {
   display: none;
+}
+@media (max-width: 1200px) {
+  .parent > div:nth-child(1)  {
+    flex: 1.75  ;
+  }
+  .parent > div:nth-child(1) > p:nth-child(2) {
+    padding-right: 1rem;
+  }
 }
 
 @media (max-width: 800px) {
@@ -107,9 +134,7 @@ line-height: 24px;
   .parent > div:nth-child(3) {
     display: none;
   }
-  /* .parent > div:nth-child(4) {
-    display: none;
-  } */
+
   .parent > div > div {
     display: flex;
     justify-content: flex-start;
@@ -153,6 +178,15 @@ line-height: 24px;
     align-items: center;
     flex-wrap: wrap;
   }
+  .parent > div:nth-child(1) > p:nth-child(2) {
+    padding:0px 2rem;
+  }
+  .parent > div:nth-child(4) > p:nth-child(1) {
+    padding-left: 0%;
+  }
+  .parent > div:nth-child(4) > div {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width:500px) {
@@ -162,8 +196,5 @@ line-height: 24px;
   }
   .FooterDivs {
     padding: 0%;
-  }
-  .parent {
-    padding:2rem 1rem ;
   }
 }

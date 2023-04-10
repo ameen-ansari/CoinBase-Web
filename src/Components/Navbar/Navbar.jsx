@@ -52,6 +52,7 @@ function Navbar() {
   };
   return (
     <>
+      <div className={style.parent}>
       <div className={style.NavbarP}>
         <div>
           <img src={logo} alt="" onClick={pushSlash} />
@@ -142,6 +143,7 @@ function Navbar() {
             bgColor="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)"
           />
         </div>
+      </div>
       </div>
       <div className={style.resNP}>
         <div className={style.resN}>

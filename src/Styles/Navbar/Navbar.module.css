@@ -1,22 +1,36 @@
-.NavbarP {
-  display: flex;
-  padding: 2rem;
+.parent {
+  width: 100%;
+  background-color: #fff;
   position: fixed;
   top: 0%;
   left: 0%;
-  width: 100%;
-  background-color: #fff;
   z-index: 59;
+}
+
+.NavbarP {
+  display: flex;
+  padding: 2rem 0rem;
+  width: 90%;
+  margin: auto;
 }
 
 .NavbarP > div:nth-child(1) {
   display: flex;
-  flex: 3;
+  justify-content: flex-start;
+  align-items: center;
+  flex:2.4;
+  padding-left: 1.5rem;
 }
+.NavbarP > div:nth-child(1) > img{
+  width: 142px;
+  height: 28px;
+}
+
+
 
 .NavbarP > div:nth-child(2) {
   display: flex;
-  flex: 3;
+  flex: 2;
   justify-content: space-between;
   align-items: center;
 }
@@ -28,22 +42,43 @@
 .NavbarP > div:nth-child(3) {
   display: flex;
   flex: 2.5;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   align-items: center;
+  gap: 2rem;
 }
-@media (max-width: 1000px) {
-  .NavbarP {
-    gap: 2rem;
+@media (max-width: 1300px) {
+  .NavbarP > div:nth-child(3) {
+    gap: 0px;
   }
-  .NavbarP > div:nth-child(1) {
-    flex: 2;
+  .sellbitcoin p:nth-child(1) {
+    padding-left: 3rem;
   }
   .NavbarP > div:nth-child(2) {
-    gap: 1rem;
-    /* flex: 1.5; */
+    flex: 3;
+  }
+}
+@media (max-width: 1050px) {
+  .NavbarP {
+    width: 95%;
+  }
+  .NavbarP > div:nth-child(1) {
+    flex: 2.5;
+  }
+  .NavbarP > div:nth-child(1) {
+    padding-left: 0.5rem;
+  }
+}
+@media (max-width: 950px) {
+  .NavbarP > div:nth-child(2) {
+    flex: 3.5;
   }
   .NavbarP > div:nth-child(3) {
-    flex: 1.5;
+    gap: 0rem;
+    flex: 0.5;
+  }
+  .NavbarP > div:nth-child(1) {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -68,18 +103,31 @@
     flex: 2 !important;
   }
   .NavbarP > div:nth-child(2) {
-    flex: 1 !important;
+    flex: 0 !important;
     text-align: right;
   }
   .NavbarP > div:nth-child(3) {
     padding: 0px 2px;
-    flex: 2.5 !important;
+    flex: 2.5 ;
     gap: 0.2rem;
   }
   .NavbarP p {
     text-align: right;
   }
+  .NavbarP > div:nth-child(3) {
+    gap: 1rem;
+  }
+  .NavbarP > div:nth-child(1) > img {
+    width: 200px !important;
+    height: 54px !important;
+  }
+  .NavbarP img {
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+  }
 }
+
 @media (max-width: 700px) {
   .NavbarP > div:nth-child(3) > div:nth-child(1) {
     display: none;
@@ -87,17 +135,27 @@
   .NavbarP > div:nth-child(1) {
     flex: 3 !important;
   }
-  .NavbarP img {
-    position: absolute;
-    top: 2.5rem;
-    left: 2rem;
+}
+@media (max-width: 750px) {
+  .NavbarP > div:nth-child(2) {
+    flex: 0 !important;
+  }
+  .NavbarP > div:nth-child(3) {
+    flex: 0 !important;
+  }
+  .NavbarP > div:nth-child(1) > img {
+    width: 180px !important;
+    height: 60px !important;
+  }
+  .NavbarP > div:nth-child(3) button {
+    width: 127px !important;
+
   }
 }
 
 .resNP {
   display: none;
 }
-
 @media (max-width: 500px) {
   .NavbarP {
     display: none;
@@ -174,9 +232,9 @@
   .NavbarP {
     gap: 1rem;
   }
-  .NavbarP div:nth-child(2) {
+  /* .NavbarP div:nth-child(2) {
     flex: 2.5;
-  }
+  } */
 }
 
 @media (max-width: 500px) {
@@ -212,27 +270,24 @@
   position: absolute;
 }
 
-.li1{
-  
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
+.li1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
 
-color: #333333;
+  color: #333333;
 }
-.li2{
-  
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 18px;
+.li2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
 
-color: #333333;
+  color: #333333;
 }
-
 
 .li1:hover {
   background: linear-gradient(
@@ -240,7 +295,7 @@ color: #333333;
     rgb(253, 116, 155) -13.56%,
     rgb(40, 26, 200) 158.3%
   );
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 .li2:hover {
   background: linear-gradient(
@@ -248,16 +303,16 @@ color: #333333;
     rgb(253, 116, 155) -13.56%,
     rgb(40, 26, 200) 158.3%
   );
-  color: #FFFFFF !important;
+  color: #ffffff !important;
 }
 .poc {
   position: absolute;
-  right:-8rem;
-  top:0rem;
+  right: -8rem;
+  top: 0rem;
   display: none;
 }
 
-.sellbitcoin{
+.sellbitcoin {
   position: relative;
 }
 .sellbitcoin:hover .poc {
@@ -267,11 +322,8 @@ color: #333333;
   margin-top: 1rem;
 }
 
-
-  
-  @media (max-width:1000px) {
-    .poc {
-      width: 20vw;
-    }
-      
+@media (max-width: 1000px) {
+  .poc {
+    width: 20vw;
   }
+}

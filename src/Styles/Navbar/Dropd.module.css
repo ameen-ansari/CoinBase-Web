@@ -11,6 +11,11 @@
   display: none;
 }
 
+@media (min-width: 700px) {
+.dropdown {
+  left: 20%;
+}
+}
 .dropdownC {
   display: none;
   position: absolute;

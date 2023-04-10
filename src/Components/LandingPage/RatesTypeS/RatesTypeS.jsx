@@ -30,16 +30,16 @@ function RatesTypeS() {
             </div>
           </div>
           <hr style={{ width: "100%" }}/>
-          <div className=" mr-16 mt-2 flex justify-end items-end">
+          <div className=" mr-16 mt-4 flex justify-end items-end">
             <button>8 hours ago</button>
           </div>
-          <div className={`${style.cardsParent} py-4 flex`}>
+          <div className={`${style.cardsParent} flex`}>
             {/* div1 */}
             <div
               style={{ flex: 1 }}
-              className="flex flex-col gap-10 justify-center align-middle px-10"
+              className="flex flex-col py-4 gap-10 justify-center align-middle px-10"
             >
-              <div className="flex justify-between items-center">
+              <div className="flex justify-between items-start">
                 <div className="flex gap-3">
                   <img src={btc} alt="" />
                   <p className="text-[14px] font-normal">BTC</p>
@@ -55,7 +55,7 @@ function RatesTypeS() {
                   </p>
                 </div>
               </div>
-              <div className="flex justify-between  items-center">
+              <div className="flex justify-between  items-start">
                 <div className="flex gap-3">
                   <img src={eth} alt="" />
                   <p className="text-[14px] font-normal">ETH</p>
@@ -86,18 +86,21 @@ function RatesTypeS() {
             </div>
             <div
               style={{ flex: 1 }}
-              className="flex flex-col gap-10 justify-center align-middle px-10"
+              className="flex flex-col py-4 gap-6 justify-center align-middle px-10"
             >
-              <div className="flex justify-between items-start pt-10">
-                <div className="flex gap-3 items-center">
+              <div className="flex justify-between items-start">
+                <div className="flex gap-3 items-start">
                   <img src={bb} alt="" />
                   <p className="text-[14px] font-normal">Bank Transfer</p>
                 </div>
                 <div className="flex flex-col gap-4 items-end">
                   <p className="text-[14px] font-normal">NGN</p>
-                  <p className="text-[14px] font-bold">#3452030300303.24/$</p>
                 </div>
               </div>
+                <div className="flex justify-end items-center">
+                  <p className="text-[14px] font-bold">#3452030300303.24/$</p>
+                </div>
+                
               <div className="flex justify-between items-center">
                 <div className="flex gap-3 items-center">
                   <img src={btc} alt="" />
@@ -131,9 +134,9 @@ function RatesTypeS() {
             </div>
             <div
               style={{ flex: 1 }}
-              className="flex flex-col gap-5 justify-center align-middle px-10"
+              className="flex flex-col gap-5 justify-between py-4 align-middle px-10"
             >
-              <div className="flex">
+              <div className="flex items-center">
                 <p className="text-[14px] font-normal">Bitcoin BTC</p>
 
                 <img
@@ -146,7 +149,7 @@ function RatesTypeS() {
                 {/* <span>&rarr;</span> */}
                 <p className="text-[14px] font-normal">Bank Transfer NGN</p>
               </div>
-              <div className="flex">
+              <div className="flex items-center">
                 <p className="text-[14px] font-bold">
                   1.6<span className="text-[14px] font-normal">BTC</span>
                 </p>
@@ -163,8 +166,8 @@ function RatesTypeS() {
                 </p>
               </div>
               <hr />
-              <div className="flex">
-                <p className="text-[14px] font-normal">Amazon Card</p>
+              <div className="flex items-center">
+                <p className="text-[14px] font-normal leading-[25px]">Amazon Card</p>
                 {/* <span>&rarr;</span> */}
                 <img
                   className={style.arrows}
@@ -173,7 +176,7 @@ function RatesTypeS() {
                   src={arrow}
                   alt=""
                 />
-                <p className="text-[14px] font-normal">Bank Transfer NGN</p>
+                <p className="text-[14px] font-normal leading-[25px]">Bank Transfer NGN</p>
               </div>
             </div>
           </div>
@@ -190,12 +193,7 @@ function RatesTypeS() {
             <img src={indicator} alt="" />
           </div>
           <p>
-            We have the best rates . Simply start your exchange right now. Sign
-            up for our Affiliate program and earn commission from each exchange.
-            The earnings are credited in your account instantly and can be
-            withdrawn right away. Also note some exchange directions are hidden
-            for unregistered user. To ensure to have access to all our exchange
-            directions and benefits kindly sign up and verify your identity.
+          CoinBase is an online site and a p2admin platform that allows users to buy, sell and/ or exchange digital and fiat assets safely. Owned and managed by CoinBase Business Services established and Incoperated in Nigeria.
           </p>
           <Button1
             value="Discover"

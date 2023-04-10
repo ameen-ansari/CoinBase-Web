@@ -27,7 +27,8 @@ function Blogs() {
           </div>
           <div>
             <p>01 FEB, 2019 | TECHNOLOGY</p>
-            <p>HOW TO SELL YOUR ITUNES GIFTCARD WITH US .</p>
+            <p>ETH TO NAIRA EXCHANGE 
+RATE IS NOW #400 PER...</p>
             <p>
               Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum
               voluptaria in. Ad mei modus quodsi complectitur, postea...
@@ -40,7 +41,9 @@ function Blogs() {
           </div>
           <div>
             <p>01 FEB, 2019 | TECHNOLOGY</p>
-            <p>HOW TO SELL YOUR ITUNES GIFTCARD WITH US .</p>
+         
+<p>EXCHANGE 5 PRODUCTS & 
+GET 1 FREE PRODUCT.</p>
             <p>
               Lorem ipsum dolor sit amet, magna habemus ius ad, qui minimum
               voluptaria in. Ad mei modus quodsi complectitur, postea...
