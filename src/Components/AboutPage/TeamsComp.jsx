@@ -16,9 +16,7 @@ function TeamsComp() {
             <div>
               <p>May 2010</p>
               <p>
-                sollicitudin rhoncus, rhoncus eget sem. Curabitur aliquam tellus
-                eu nisl suscipit, at vestibulum ex rutrum. Nulla facilisi. Cras
-                ullamcorper pellentesque orci, nec vestibulum nibh.uspendisse
+              Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum nibh.uspendisse
               </p>
             </div>
             <div></div>
@@ -27,9 +25,7 @@ function TeamsComp() {
             <div>
               <p>May 2015</p>
               <p>
-                sollicitudin rhoncus, rhoncus eget sem. Curabitur aliquam tellus
-                eu nisl suscipit, at vestibulum ex rutrum. Nulla facilisi. Cras
-                ullamcorper pellentesque orci, nec vestibulum nibh.uspendisse
+              Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum nibh.uspendisse
               </p>
             </div>
             <div></div>
@@ -38,15 +34,14 @@ function TeamsComp() {
             <div>
               <p>May 2020</p>
               <p>
-                sollicitudin rhoncus, rhoncus eget sem. Curabitur aliquam tellus
-                eu nisl suscipit, at vestibulum ex rutrum. Nulla facilisi. Cras
-                ullamcorper pellentesque orci, nec vestibulum nibh.uspendisse
+              Ut enim mi, mattis at sollicitudin rhoncus, rhoncus eget sem. Curabitur aliquam tellus eu nisl suscipit, at vestibulum ex rutrum. Nulla facilisi. Cras ullamcorper pellentesque orci, nec vestibulum nibh.uspendisse
               </p>
             </div>
             <div></div>
           </div>
           <img className={style.tree} src={tree} alt="" />
         </div>
+        <p style={{fontFamily:'Poppins'}} className="text-center relative z-10 bg-white pt-8 font-bold text-[12px] leading-[20px]">TO BE CONTINUE...</p>
       </div>
       <div className={style.P2}>
         <div>

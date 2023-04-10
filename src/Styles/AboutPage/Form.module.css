@@ -34,7 +34,7 @@
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0px;
-    width: 70%;
+    width: 60%;
     text-align: center;
     margin: auto;
   }
@@ -47,9 +47,13 @@
   }
   
   .parent4 input {
-    border: 2px solid grey;
+    border: 1px solid grey;
+    margin: 1rem 0px;
+    border-color: rgb(134 25 143);
+    outline: 0;
     padding: 0.7rem 1rem;
-    width: 30%;
+    width:388px;
+    height: 54px;
     text-align: left;
     border-radius: 100px;
     font-family: "Poppins";
@@ -75,7 +79,7 @@
       gap: 1rem;
     }
     .parent4 input {
-      width: 40%;
+      width: 60%;
     }
   }
   @media (max-width: 550px) {
@@ -91,7 +95,7 @@
       font-size: 24px;
     }
     .parent4 input {
-      width: 60%;
+      width: 90%;
     }
     .parent4 > div:nth-child(2) > p {
       width: 95%;
