@@ -1,5 +1,6 @@
 import style from "../../../Styles/LandingPage/RatesType/RatesTypeS.module.css";
 import img1 from "../../../Images/LandingPage/RatesTypeS/Path 4 (1).png";
+// import img1 from "../../../Images/LandingPage/RatesTypeS/BG (2).svg";
 import img2 from "../../../Images/LandingPage/RatesTypeS/Path 4.1.png";
 import btc from "../../../Images/LandingPage/RatesTypeS/bitcoin.png";
 import Button1 from "../../Buttons/Button1";

@@ -1,10 +1,11 @@
 .parent {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .parent > div:nth-child(1) > img {
@@ -26,6 +27,7 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 35px;
+
 }
 
 .parent > div:nth-child(2) > p {
@@ -61,13 +63,22 @@
   bottom: 2rem;
   z-index: 9;
 }
+@media (min-width: 1000px) {
+  
+.parent2 > img {
+  position: relative !important ;
+  bottom: 5rem;
+  z-index: 0;
+}
+
+}
 
 @media (min-width:1400px) {
   .parent2 > img {
     position: relative !important ;
 
-    bottom: 2rem;
-    z-index: 9;
+    bottom: 7rem;
+    z-index:0;
     width: 100vw !important; 
   }
     
@@ -100,18 +111,12 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  padding: 3rem 1rem 6rem 1rem;
+  padding: 5rem 1rem 6rem 1rem;
 }
 
 .parent4 > div:nth-child(1) > img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.parent4 > div:nth-child(1) > img {
   width: 16%;
-  margin: auto;
+  margin:0.5rem auto auto auto;
 }
 .parent4 > div:nth-child(1) > p {
   background: linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%);
@@ -131,9 +136,9 @@
   font-weight: 400;
   line-height: 40px;
   letter-spacing: 0px;
-  width: 70%;
+  width: 60%;
   text-align: center;
-  margin: auto;
+  margin:auto auto 2rem auto;
 }
 .parent4 > div:nth-child(3) {
   display: flex;
@@ -151,7 +156,7 @@
   outline: 0;
   border-style: solid;
   border-width: 1px;
-  border-color:#281ac8;
+  border-color:rgb(134 25 143);
   text-align: left;
   border-radius: 100px;
   font-family: "Poppins";

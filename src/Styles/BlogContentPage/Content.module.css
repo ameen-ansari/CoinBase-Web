@@ -62,7 +62,7 @@
 .P2 {
   width: 64%;
   margin: auto;
-  padding: 2rem 5rem;
+  padding:4rem 5rem 3rem 5rem;
   display: flex;
 }
 
@@ -237,7 +237,7 @@
 }
 
 .P4 {
-  padding: 1rem 5rem;
+  padding: 5rem 5rem 2rem 5rem;
 }
 
 @media (max-width: 600px) {

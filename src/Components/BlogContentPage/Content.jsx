@@ -109,7 +109,7 @@ function Content() {
           <p>Next Post</p>
         </div>
       </div>
-      <div className={style.P4}>
+      <div className={`${style.P4}`}>
         <p>Leave A Comment</p>
         <p>
           Your email address will not be published. Required fields are marked

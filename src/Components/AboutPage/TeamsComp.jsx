@@ -2,6 +2,7 @@ import style from "../../Styles/AboutPage/TeamsComp.module.css";
 import React from "react";
 import ind from "../../Images/Navbar/Indicator.png";
 import tree from "../../Images/LandingPage/TeamsComp/Tree.png";
+import center from "../../Images/About/3.svg";
 
 function TeamsComp() {
   return (
@@ -54,10 +55,14 @@ function TeamsComp() {
         </p>
         <div className={style.CardInTeam}>
           <div></div>
+          <div></div>  
+          <div className="relative flex flex-col">
+            <p className="font-bold text-[70%] leading-[18px] text-[white]" >CEO</p>
+            <p className=" font-normal text-[65%] leading-[18px] text-[white]">Amanda Roth</p>
+          </div>
           <div></div>
           <div></div>
-          <div></div>
-          <div></div>
+           
         </div>
       </div>
     </>

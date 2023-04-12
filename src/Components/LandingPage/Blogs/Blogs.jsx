@@ -11,7 +11,7 @@ function Blogs() {
     <div className={style.parent}>
       <div>
         <div className={style.div1}>
-          <p>Our Blog</p>
+          <p>Our blog</p>
           <img src={ind} alt="" />
         </div>
         <p>Get to know the latest stuff via our blog post.</p>

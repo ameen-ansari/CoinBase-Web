@@ -1,5 +1,5 @@
 .Allparent {
-background-image: url("../../../Images/Header/Rectangle\ 284.png");
+  background-image: url("../../../Images/Header/Rectangle\ 284.png");
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -19,21 +19,20 @@ background-image: url("../../../Images/Header/Rectangle\ 284.png");
 }
 
 @media (max-width: 1430px) {
-  .parent{
+  .parent {
     width: 95%;
     padding-top: 2.5rem;
     padding-bottom: 10rem;
   }
-  
 }
 @media (max-width: 1200px) {
-  .parent{
+  .parent {
     width: 100%;
     padding-top: 0%;
     padding-bottom: 5rem;
   }
-  .parent > div:nth-child(2){
-    flex:1 ;
+  .parent > div:nth-child(2) {
+    flex: 1;
   }
 }
 
@@ -111,7 +110,7 @@ background-image: url("../../../Images/Header/Rectangle\ 284.png");
   -webkit-text-fill-color: transparent !important;
   margin: auto;
   font-size: 14px !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
   font-family: "Poppins";
 }
 
@@ -124,7 +123,7 @@ background-image: url("../../../Images/Header/Rectangle\ 284.png");
   -webkit-background-clip: text !important;
   -webkit-text-fill-color: transparent !important;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 700;
   font-family: "Poppins";
 }
 .parent > div:nth-child(1) > p:nth-child(2) {
@@ -139,7 +138,6 @@ background-image: url("../../../Images/Header/Rectangle\ 284.png");
   left: 0%;
   width: 100vw;
 }
-
 
 @media (max-width: 950px) {
   .parent > div {
@@ -156,7 +154,7 @@ background-image: url("../../../Images/Header/Rectangle\ 284.png");
     font-size: 32px;
     line-height: 50px;
   }
-  .parent > div:nth-child(1) > p:nth-child(1) > span{
+  .parent > div:nth-child(1) > p:nth-child(1) > span {
     font-size: 32px;
   }
   .parent > div span {
@@ -173,7 +171,7 @@ background-image: url("../../../Images/Header/Rectangle\ 284.png");
     font-size: 28px;
     line-height: 45px;
   }
-  .parent > div:nth-child(1) > p:nth-child(1) > span{
+  .parent > div:nth-child(1) > p:nth-child(1) > span {
     font-size: 28px;
   }
   .parent > div span {
@@ -224,15 +222,14 @@ background-image: url("../../../Images/Header/Rectangle\ 284.png");
 .headerBottomSideP {
   display: flex;
   /* margin: 2rem 0px; */
-  padding-bottom: 2rem;
+  /* padding-bottom: 2rem; */
   width: 85%;
-  margin:2rem auto 2rem auto;
+  margin: 2rem auto 0rem auto;
   position: relative;
   z-index: 2;
 }
 
-@media (max-width:1100px) {
-  
+@media (max-width: 1100px) {
   .headerBottomSideP {
     width: 95%;
   }
@@ -275,7 +272,7 @@ background-image: url("../../../Images/Header/Rectangle\ 284.png");
   line-height: 40px;
   letter-spacing: 0px;
   text-align: left;
-  padding-right: 4rem;
+  padding-right: 5rem;
 }
 
 .headerBottomSideP > div:nth-child(2) > button {
@@ -301,8 +298,7 @@ background-image: url("../../../Images/Header/Rectangle\ 284.png");
   }
 }
 
-
-@media (min-width:1430px) {
+@media (min-width: 1430px) {
   .Allparent {
     padding: 8rem 0px;
   }
@@ -311,3 +307,4 @@ background-image: url("../../../Images/Header/Rectangle\ 284.png");
     left: 0%;
   }
 }
+

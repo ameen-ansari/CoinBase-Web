@@ -5,23 +5,28 @@ import pathTYpe from "../../../Images/Header/Path 4.png";
 import Button1 from "../../Buttons/Button1";
 import botomH from "../../../Images/Header/Layer 2.png";
 import indicator from "../../../Images/Navbar/Indicator.png";
+import img1 from "../../../Images/LandingPage/RatesTypeS/Path 4 (1).png";
 
 function Header() {
   return (
     <>
+    <div className={style.dropD}>
+      <p>Sell Bitcoin</p>
+      <p>Sell Giftcard</p>
+    </div>
       <div id="nav2" className={`${style.Allparent}`}>
         <div className={`${style.parent} flex`}>
           <div>
-            <p>
+            <p  className='xl:w-[85%]'>
               We provide easy solution to exchange your
-              <span>Bitcoin/ GiftCard for money</span>
+              <span> Bitcoin/ GiftCard for money</span>
             </p>
-            <p>
+            <p className='xl:w-[80%]'>
               CoinBase is a platform for trading your bitcoin and giftcard at
               the best rate, why not give us a trial.
             </p>
             <div>
-              <p className="cursor-pointer">GET STARTED</p>
+              <p className="cursor-pointe ">GET STARTED</p>
             </div>
           </div>
           <div>
@@ -41,7 +46,7 @@ function Header() {
             <p className={style.wel}>Welcome to Coinbase</p>
             <img src={indicator} alt="" />
           </div>
-          <p>
+          <p className='pb-[1rem]'>
             We have the best rates . Simply start your exchange right now. Sign
             up for our Affiliate program and earn commission from each exchange.
             The earnings are credited in your account instantly and can be
@@ -55,6 +60,7 @@ function Header() {
             bgColor="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)"
           />
         </div>
+        {/* <img src={img1} className="absolute bottom-[-50%] w-[100%] left-0" alt="" /> */}
       </div>
     </>
   );

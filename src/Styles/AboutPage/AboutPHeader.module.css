@@ -80,7 +80,7 @@
 
 @media (min-width: 1450px) {
   .Allparent > div:nth-child(2) img {
-    bottom: -3rem;
+    bottom: -5rem;
     width: 100vw;
   }
 
@@ -202,8 +202,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
+.P2 > div > img:nth-child(2) {
+  width: 50px;
+}
 .P2 > div > p:nth-child(3) {
   font-family: "Poppins";
   font-size: 14px;
@@ -268,6 +272,9 @@
   margin: 1rem 0px;
 }
 
+  .P3 > div > div > img {
+    width: 50px;
+  }
 @media (max-width: 1200px) {
   .P3 > div > p:nth-child(3) {
     width: 70%;

@@ -9,7 +9,14 @@ import { useState } from "react";
 function Navbar() {
   let navigate = useNavigate();
   const [activePage, setActivePage] = useState("home");
-
+  let showMenu = () => {
+    let menu = document.getElementById('menu')
+    if (menu.style.display == 'none') {
+      menu.style.display = 'flex'
+    }else{
+      menu.style.display = 'none'
+    }
+  }
   let pushSlash = () => {
     navigate("/");
     let offC = document.getElementById("offC");
@@ -30,14 +37,14 @@ function Navbar() {
     let offC = document.getElementById("offC");
     offC.style.bottom = "100%";
     offC.style.transition = "0.5s";
-    setActivePage("blog");
+    setActivePage("contact");
   };
   let pushBlogsC = () => {
     navigate("/blogcontent");
     let offC = document.getElementById("offC");
     offC.style.bottom = "100%";
     offC.style.transition = "0.5s";
-    setActivePage("contact");
+    setActivePage("blog");
   };
   let showOffC = () => {
     let offC = document.getElementById("offC");
@@ -50,100 +57,80 @@ function Navbar() {
     offC.style.bottom = "100%";
     offC.style.transition = "0.5s";
   };
+
+
   return (
     <>
       <div className={style.parent}>
-      <div className={style.NavbarP}>
-        <div>
-          <img src={logo} alt="" onClick={pushSlash} />
-        </div>
-        <div>
-          <div className={style.home}>
+        <div className={style.NavbarP}>
+          <div>
+            <img src={logo} alt="" onClick={pushSlash} />
+          </div>
+          <div>
+            <div className={style.home}>
+              <p
+                className={activePage === "home" ? style.activePage : ""}
+                id="slash"
+                onClick={pushSlash}
+              >
+                Home
+              </p>
+              {/* <img src={indicator} alt="" /> */}
+            </div>
             <p
-              className={activePage === "home" ? style.activePage : ""}
-              id="slash"
-              onClick={pushSlash}
+              className={activePage === "about" ? style.activePage : ""}
+              id="slashA"
+              onClick={pushAbout}
             >
-              Home
+              About Us
             </p>
-            {/* <img src={indicator} alt="" /> */}
-          </div>
-          <p
-            className={activePage === "about" ? style.activePage : ""}
-            id="slashA"
-            onClick={pushAbout}
-          >
-            About Us
-          </p>
-          <p
-            id="slashB"
-            className={activePage === "blog" ? style.activePage : ""}
-            onClick={pushBlogs}
-          >
-            Blogs
-          </p>
-          <p className={`${style1.dropdown} ${style.dropdown}`}>
-            <p>More</p>
-            <ul className={`${style1.dropdownC}`}>
-              <li>
-                <p onClick={pushSlash}>Home</p>
-              </li>
-              <li>
-                <p onClick={pushAbout}>About</p>
-              </li>
-              <li>
-                <p onClick={pushBlogs}>Blogs</p>
-              </li>
-              <li>
-                <p onClick={pushBlogsC}>Contact Us</p>
-              </li>
-            </ul>
-          </p>
-          <p
-            id="slashC"
-            className={activePage === "contact" ? style.activePage : ""}
-            onClick={pushBlogsC}
-          >
-            Contact Us
-          </p>
-        </div>
-        <div>
-          <div className={style.sellbitcoin}>
-            <p>Sell Bitcoin/ Giftcard&#9660;</p>
-          <div
-            id="dropdownOffset"
-            className={`z-10 mt-[10px] ml-12 border-[1px] border-[#E0E0E0] absolute  opacity-80 bg-white divide-y divide-gray-100 rounded-lg shadow w-36 dark:bg-white-700 block}  ${style.poc} `}
-          >
-            <ul
-              className=" text-sm  text-black dark:text-gray-200"
-              aria-labelledby="dropdownDefault"
+            <p
+              id="slashB"
+              className={activePage === "blog" ? style.activePage : ""}
+              onClick={pushBlogsC}
             >
-              <li className={style.li1}>
-              <a
-                  href="#"
-                  className="block pl-4 py-3 mt-2 font-normal text-sm rounded-bl-lg rounded-br-lg dark:hover:bg-white "
-                >
-                  Sell Giftcard
-                </a>
-              </li>
-              <li className={style.li2}>
-                <a
-                  href="#"
-                  className="block pl-4 py-3 mt-2 font-normal text-sm rounded-bl-lg rounded-br-lg dark:hover:bg-white "
-                >
-                  Sell Giftcard
-                </a>
-              </li>
-            </ul>
+              Blogs
+            </p>
+            <p className={`${style1.dropdown} ${style.dropdown}`}>
+              <p>More</p>
+              <ul className={`${style1.dropdownC}`}>
+                <li>
+                  <p onClick={pushSlash}>Home</p>
+                </li>
+                <li>
+                  <p onClick={pushAbout}>About</p>
+                </li>
+                <li>
+                  <p onClick={pushBlogsC}>Blogs</p>
+                </li>
+                <li>
+                  <p onClick={pushBlogs}>Contact Us</p>
+                </li>
+              </ul>
+            </p>
+            <p
+              id="slashC"
+              className={activePage === "contact" ? style.activePage : ""}
+              onClick={pushBlogs}
+            >
+              Contact Us
+            </p>
           </div>
+          <div>
+            <div className={style.sellbitcoin}>
+              <p onClick={showMenu}>Sell Bitcoin/ Giftcard&#9660;</p>
+              <div id='menu' className={style.dropD}>
+                <p >Sell Bitcoin</p>
+                <p >Sell Giftcard</p>
+              </div>
+            </div>
+            <Button1
+              value="LOGIN"
+              color="white"
+              bgColor="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)"
+            />
           </div>
-          <Button1
-            value="LOGIN"
-            color="white"
-            bgColor="linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%)"
-          />
         </div>
-      </div>
       </div>
       <div className={style.resNP}>
         <div className={style.resN}>

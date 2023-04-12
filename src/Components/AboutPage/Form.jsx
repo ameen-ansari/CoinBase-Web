@@ -17,7 +17,7 @@ function Form() {
         </p>
       </div>
       <div>
-        <input type="text" placeholder="ameen55668@gmail.com" />
+        <input type="text" placeholder="EMAIL" />
         <Button
           value="DISCOVER"
           bgColor="linear-gradient(178.18deg, #fd749b -13.56%, #281ac8 158.3%)"

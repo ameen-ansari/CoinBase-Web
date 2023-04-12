@@ -8,6 +8,7 @@
   position: relative;
   bottom: 10rem;
   z-index: 1;
+  /* display: none; */
 }
 @media (max-width: 1150px) {
   .parent > img:nth-child(1) {
@@ -21,6 +22,7 @@
     position: relative;
     width: 100vw;
     left: 0%;
+    bottom: 13rem;
   }
   .parent img:nth-child(3) {
     position: relative;
@@ -139,6 +141,7 @@
 .parent img:nth-child(3) {
   position: relative;
   top: 2rem;
+  /* display: none; */
 }
 
 .littelCard div:nth-child(2) {
@@ -177,9 +180,15 @@
   display: flex;
   flex-direction: row-reverse;
   margin-top: 2rem;
-  padding: 4rem 1rem;
+  padding:0rem 1rem 8rem 1rem;
   width: 80%;
   margin: auto;
+}
+
+@media (min-width: 1350px) {
+  .headerBottomSideP {
+    padding:0rem 1rem 8rem 1rem;
+  }
 }
 
 @media (max-width: 1200px) {
